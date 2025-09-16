@@ -10,3 +10,9 @@ p {
 ol {
   margin-top: 1rem !important;
 }
+
+hsp {
+  display: block;
+  height: 5px;
+  width: 100%;
+}

@@ -23,15 +23,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
-     inkscape:zoom="1"
-     inkscape:cx="217"
-     inkscape:cy="392"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="216.72823"
+     inkscape:cy="311.48054"
      inkscape:window-width="1868"
-     inkscape:window-height="1105"
+     inkscape:window-height="905"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g25" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs1">
     <marker
@@ -158,129 +158,88 @@
          d="M 37.651797,73.767738 H 143.48513"
          id="path15" />
       <path
+         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.3;stroke-dasharray:0.3, 0.6;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 116.47508,21.947001 64.616754,125.66366"
+         id="path27"
+         sodipodi:nodetypes="cc" />
+      <path
          style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
          d="m 90.568462,20.85107 7e-6,105.83333"
          id="path16" />
-      <path
-         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
-         d="M 90.568463,73.767739 101.1518,52.601072"
-         id="path17"
-         sodipodi:nodetypes="cc" />
       <text
          xml:space="preserve"
-         style="font-size:7.7611px;line-height:1.8;font-family:'Hoefler Text';-inkscape-font-specification:'Hoefler Text';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
-         x="99.970345"
-         y="51.145332"
+         style="font-size:5.64444px;line-height:1.8;font-family:'Hoefler Text';-inkscape-font-specification:'Hoefler Text';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
+         x="118.49115"
+         y="56.966167"
          id="text21"><tspan
            sodipodi:role="line"
            id="tspan21"
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.3"
-           x="98.072746"
-           y="51.145332">v</tspan></text>
-      <path
-         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
-         d="m 96.670881,46.279712 h 2.11667"
-         id="path23"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
-         d="M 101.1518,52.601071 111.73514,31.434404"
-         id="path25"
-         sodipodi:nodetypes="cc" />
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.64444px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.3"
+           x="118.49115"
+           y="56.966167">1 ⋅ |v〉</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:7.7611px;line-height:1.8;font-family:'Hoefler Text';-inkscape-font-specification:'Hoefler Text';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
-         x="110.55367"
-         y="29.978662"
-         id="text25"><tspan
-           sodipodi:role="line"
-           id="tspan25"
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.3"
-           x="110.55367"
-           y="29.978662">2 ⋅ v</tspan></text>
-      <path
-         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
-         d="m 107.25422,25.113044 h 2.11667"
-         id="path26"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
-         d="M 80.491755,93.913668 69.908421,115.08033"
-         id="path27"
-         sodipodi:nodetypes="cc" />
-      <text
-         xml:space="preserve"
-         style="font-size:7.7611px;line-height:1.8;font-family:'Hoefler Text';-inkscape-font-specification:'Hoefler Text';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
-         x="89.387009"
-         y="72.311996"
+         style="font-size:5.64444px;line-height:1.8;font-family:'Hoefler Text';-inkscape-font-specification:'Hoefler Text';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#f9f9f9;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
+         x="122.7245"
+         y="78.661995"
          id="text27"><tspan
            sodipodi:role="line"
            id="tspan27"
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.3"
-           x="89.387009"
-           y="72.311996">0 ⋅ v</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.64444px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.3"
+           x="122.7245"
+           y="78.661995">0 ⋅ |v〉 = |0〉</tspan></text>
       <path
-         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
-         d="m 86.087549,67.44638 h 2.11667"
-         id="path28"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
+         style="fill:none;fill-opacity:0.1;stroke:#00ffff;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
          d="M 91.075089,72.746995 80.491755,93.913667"
          id="path29"
          sodipodi:nodetypes="cc" />
       <text
          xml:space="preserve"
-         style="font-size:7.7611px;line-height:1.8;font-family:'Hoefler Text';-inkscape-font-specification:'Hoefler Text';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
-         x="78.80368"
-         y="93.478653"
+         style="font-size:5.64444px;line-height:1.8;font-family:'Hoefler Text';-inkscape-font-specification:'Hoefler Text';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#00ffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
+         x="98.382835"
+         y="98.24115"
          id="text29"><tspan
            sodipodi:role="line"
            id="tspan29"
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.3"
-           x="78.80368"
-           y="93.478653">-1 ⋅ v</tspan></text>
-      <path
-         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
-         d="m 75.504215,88.613048 h 2.11667"
-         id="path30"
-         sodipodi:nodetypes="cc" />
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.64444px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.3"
+           x="98.382835"
+           y="98.24115">-1 ⋅ |v〉</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:7.7611px;line-height:1.8;font-family:'Hoefler Text';-inkscape-font-specification:'Hoefler Text';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
-         x="68.220352"
-         y="114.64532"
-         id="text30"><tspan
-           sodipodi:role="line"
-           id="tspan30"
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.3"
-           x="68.220352"
-           y="114.64532">-2 ⋅ v</tspan></text>
-      <path
-         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
-         d="m 64.920881,109.77972 h 2.11667"
-         id="path31"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
-         d="m 111.73514,31.434403 5.29167,-10.583334"
-         id="path32"
-         sodipodi:nodetypes="cc" />
-      <text
-         xml:space="preserve"
-         style="font-size:7.7611px;line-height:1.8;font-family:'Hoefler Text';-inkscape-font-specification:'Hoefler Text';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
-         x="137.01201"
-         y="19.39533"
+         style="font-size:5.64444px;line-height:1.8;font-family:'Hoefler Text';-inkscape-font-specification:'Hoefler Text';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#ff8080;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
+         x="112.97385"
+         y="66.678253"
          id="text32"><tspan
            sodipodi:role="line"
            id="tspan32"
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.3"
-           x="137.01201"
-           y="19.39533">2.5 ⋅ v</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.64444px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:0.3"
+           x="112.97385"
+           y="66.678253">½ ⋅ |v〉</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.8;font-family:'Hoefler Text';-inkscape-font-specification:'Hoefler Text';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#aa0000;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
+         x="129.07454"
+         y="35.799496"
+         id="text2"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.64444px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.3"
+           x="129.07454"
+           y="35.799496">2 ⋅ |v〉</tspan></text>
       <path
-         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
-         d="m 133.71257,14.52971 h 2.11667"
-         id="path33"
+         style="fill:none;fill-opacity:0.1;stroke:#aa0000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
+         d="M 101.1518,52.601071 111.73514,31.434404"
+         id="path25"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
+         d="M 90.568463,73.767739 101.1518,52.601072"
+         id="path17"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;fill-opacity:0.1;stroke:#ff8080;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
+         d="M 90.568466,73.767739 95.860133,63.184405"
+         id="path32"
          sodipodi:nodetypes="cc" />
     </g>
   </g>

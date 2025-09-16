@@ -30,9 +30,8 @@ layout: cover
 
 <link rel="stylesheet" type="text/css" href="s4.css" />
 
-# Data en Dimensionaliteit
-
-## Lineaire Algebra 1
+# AI-S4 Deep Learning
+## Lineaire Algebra
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -59,7 +58,7 @@ image: wooclap.png
 layout: chaptertitle
 ---
 
-# Data
+# [LA-1] Data en Dimensionaliteit
 
 ---
 
@@ -107,7 +106,7 @@ Hoe zouden we dit op &eacute;&eacute;n getallenlijn plaatsen?
 - Zwart-wit naar fel?
 - Rood-paars-blauw?
 
-&nbsp;
+<hsp />
 
 </v-click>
 
@@ -171,18 +170,18 @@ image: lalg.png
 - Vector bestaat in een $n$-dimensionale ruimte
   - Coordinaat in de ruimte
   - Weer te geven als lijst van $n$ getallen (coordinaten)
+  - Notatie: $\mathbf v$, $\vec v$ of $\ket v$
 
-&nbsp;
 
 ### Voorbeeld: 2D
 
-$$\vec v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \vec u = \begin{bmatrix}3 \\ -1 \end{bmatrix}$$
+$$\ket v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \ket u = \begin{bmatrix}3 \\ -1 \end{bmatrix}$$
 
-$\vec v$ en $\vec u$ zijn vectoren in een 2D ruimte. $\vec v$ is te lezen als het coordinaat $X = 1,\ Y = 2$.
+$\ket v$ en $\ket u$ zijn vectoren in een 2D ruimte. $\ket v$ is te lezen als het coordinaat $X = 1,\ Y = 2$.
 
 **Teken deze punten op een vel papier met een assenstelsel. Teken voor beide punten een pijl van de oorsprong naar het coordinaat.**
 
-*De ruimte waar alle 2D vectoren in vallen drukken we uit als $\mathbb R^2$. We gebruiken de set notatie $\vec v \in \mathbb R^2$ om uit te drukken dat $\vec v$ een 2D-vector is.*
+*De ruimte waar alle 2D vectoren in vallen drukken we uit als $\mathbb R^2$. We gebruiken de set notatie $\ket v \in \mathbb R^2$ om uit te drukken dat $\ket v$ een 2D-vector is.*
 
 ---
 layout: image-right
@@ -195,9 +194,12 @@ We kunnen 2 vectoren bij elkaar optellen:
   - Geometrisch (plaatje)
   - Numeriek
 
-$$\vec v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \vec u = \begin{bmatrix}3 \\ -1 \end{bmatrix}$$
-$$\vec z = \vec v + \vec u = \begin{bmatrix}1 \\ 2 \end{bmatrix} + \begin{bmatrix}3 \\ -1 \end{bmatrix} = \begin{bmatrix}3 + 1 \\ 1 + (-1) \end{bmatrix} = \begin{bmatrix}4 \\ 0 \end{bmatrix}$$
+$$\ket v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \ket u = \begin{bmatrix}3 \\ -1 \end{bmatrix}$$
+$$\ket z = \ket v + \ket u = \begin{bmatrix}1 \\ 2 \end{bmatrix} + \begin{bmatrix}3 \\ -1 \end{bmatrix} = \begin{bmatrix}3 + 1 \\ 1 + (-1) \end{bmatrix} = \begin{bmatrix}4 \\ 0 \end{bmatrix}$$
 
+<hsp />
+
+*Vectoren voldoen aan een aantal regels, waardoor optellen werkt zoals we gewend zijn van getallen.*
 
 ---
 layout: image-right
@@ -206,16 +208,32 @@ image: vec_add.svg
 
 # Regels voor optellen
 
-Vectoren voldoen aan een aantal regels, waardoor optellen werkt zoals we gewend zijn van getallen:
 
-- Associativiteit: $\vec u + \vec v = \vec v + \vec u$
-- Commutativiteit: $(\vec u + \vec v) + \vec w = \vec u + (\vec v + \vec w)$
-- Identiteit: $\exist\ \vec 0 \text{ zodat } \vec 0 + \vec v = \vec 0 = \vec v + \vec 0$
-    - Er bestaat voor iedere ruimte een vector $\vec 0$ die als nul-element fungeert
-- Inverse:  $\forall\ \vec v\ \ \exists(-\vec v) \text{ zodat }  \vec v + (- \vec v) = \vec 0$
-    - Er bestaat voor elke vector $\vec v$ in iedere ruimte een inverse $-\vec v$
-    - Meestal schrijven we niet $\vec u + (- \vec v)$, maar $\vec u - \vec v$ (aftrekken)
+### Associativiteit 
+$$\ket u + \ket v = \ket v + \ket u$$
+### Commutativiteit
+$$\big(\ket u + \ket v\big) + \ket w = \ket u + \big(\ket v + \ket w\big)$$
+### Identiteit
+$$\exist\ \ket 0 \text{ zodat } \ket 0 + \ket v = \ket v = \ket v + \ket 0$$
+**Er bestaat voor iedere ruimte een vector $\ket 0$ die als nul-element fungeert**
+$$\ket 0 = \begin{bmatrix} 0 \\ \vdots \\ 0 \end{bmatrix}$$
 
+---
+layout: image-right
+image: vec_add.svg
+---
+
+# Vectoren aftrekken
+
+Aftrekken wordt gedefinieerd aan de hand van optellen met een inverse, net als bij getallen:
+$$2 - 1 = 2 + (-1)$$
+
+### Inverse
+$$\forall\ \ket v\ \ \exists\ket{-v} \text{ zodat }  \ket v + \ket{-v} = \ket 0$$
+**Er bestaat voor elke vector $\ket v$ in iedere ruimte een inverse $-\ket v$**
+
+$$\ket{v} = \begin{bmatrix}1 \\ 2 \end{bmatrix} \iff \ket{-v} = \begin{bmatrix} -1 \\ -2 \end{bmatrix}$$
+$$\ket{u} = \begin{bmatrix}3 \\ -1 \end{bmatrix} \iff \ket{-u} = \begin{bmatrix} -3 \\ 1 \end{bmatrix}$$
 
 ---
 layout: image-right
@@ -225,31 +243,52 @@ image: vec_scale.svg
 # Schalen (scalair product)
 
   - Vermeniguldigen met een gewoon (scalair) getal
-  - Deze getallen komen uit dezelfde verzameling als de getallen binnen de vectoren
-      - In ons geval ($\mathbb R^2$) is dit uit $\mathbb R$
-  - Veelvouden van $\vec v$ vormen een soort getallenlijn
+  - Deze getallen komen uit dezelfde verzameling als de getallen binnen de vectoren ($\mathbb R$)
+  - Veelvouden van $\ket v$ vormen een soort getallijn
 
 ### Numeriek
 
 We vermenigvuldigen elk getal in de vector:
 
-$$2 \cdot \vec v = 2 \cdot \begin{bmatrix}1 \\ 2 \end{bmatrix} = \begin{bmatrix}2 \cdot 1 \\ 2 \cdot 2 \end{bmatrix} = \begin{bmatrix}2 \\ 4 \end{bmatrix}$$
-$$-1 \cdot \vec v = -1 \cdot \begin{bmatrix}1 \\ 2 \end{bmatrix} = \begin{bmatrix}-1 \cdot 1 \\ -1 \cdot 2 \end{bmatrix} = \begin{bmatrix}-1 \\ -2 \end{bmatrix} = -\vec v$$
-$$0 \cdot \vec v = 0 \cdot \begin{bmatrix}1 \\ 2 \end{bmatrix} = \begin{bmatrix}0 \cdot 1 \\ 0 \cdot 2 \end{bmatrix} = \begin{bmatrix}0 \\ 0 \end{bmatrix} = \vec 0$$
+$$2 \ket v = 2 \cdot \begin{bmatrix}1 \\ 2 \end{bmatrix} = \begin{bmatrix}2 \cdot 1 \\ 2 \cdot 2 \end{bmatrix} = \begin{bmatrix}2 \\ 4 \end{bmatrix}$$
+$$-1 \cdot \ket v = -1 \cdot \begin{bmatrix}1 \\ 2 \end{bmatrix} = \begin{bmatrix}-1 \cdot 1 \\ -1 \cdot 2 \end{bmatrix} = \begin{bmatrix}-1 \\ -2 \end{bmatrix} = \ket{-v}$$
+$$0 \cdot \ket v = 0 \cdot \begin{bmatrix}1 \\ 2 \end{bmatrix} = \begin{bmatrix}0 \cdot 1 \\ 0 \cdot 2 \end{bmatrix} = \begin{bmatrix}0 \\ 0 \end{bmatrix} = \ket 0$$
 
 ---
 layout: image-right
 image: vec_dist.svg
 ---
 
-# Regels
+# Regels voor schalen
 
-- Identiteit: $1 \vec v = \vec v$
-- Scalair vermenigvuldigen werkt samen met normaal vermenigvuldigen: $a \cdot (b \cdot \vec v) = (a \cdot b) \cdot \vec v$
-- Distributiviteit over vector som: $a \cdot (\vec u + \vec v) = a \cdot \vec u + a \cdot \vec v$
-- Distributiviteit over scalaire som: $(a + b) \cdot \vec v = a \cdot \vec v + b \cdot \vec v$
+*Ook hier zijn er regels die maken dat rekenen met vectoren zoveel mogelijk werkt als we gewend zijn:*
 
-*Ook deze regels maken dat rekenen met vectoren zoveel mogelijk werkt als we gewend zijn (geen verrassingen)*
+### Identiteit 
+Schalen met een factor $1$ doet niets
+$$1 \ket v = \ket v$$
+
+### Combinatie met normaal product
+Het maakt niet uit in welke volgorde we scalair product en "normaal product" uitvoeren
+$$a \cdot \big(b \cdot \ket v\big) = \big(a \cdot b\big) \cdot \ket v$$
+
+
+TODO plaatje
+
+---
+layout: image-right
+image: vec_dist.svg
+---
+
+# Distributiviteit
+Het principe van distributie kennen we van getallen:
+$$2 \cdot (3 + 1) = 2 \cdot 3 + 2 \cdot 1$$
+
+### Distributiviteit over vector som
+Schalen van een som is hetzelfde als de som van geschaalde vectoren
+$$a \cdot \big(\ket u + \ket v\big) = a \cdot \ket u + a \cdot \ket v$$
+### Distributiviteit over scalaire som
+Schalen met een som is hetzelfde als de som van geschaalde vectoren
+$$(a + b) \cdot \ket v = a \cdot \ket v + b \cdot \ket v$$
 
 TODO plaatje
 
@@ -266,10 +305,19 @@ TODO plaatje
 
 **Een vector hoeft dus niet een lijst met getallen te zijn, maar dit is wel de weergave die wij zullen hanteren.**
 
-&nbsp;
+<hsp />
+<hsp />
+<hsp />
+<hsp />
 
 ## Bonus
 - Iets meer dan de helft van de regels werkt ook voor bijvoorbeeld `str` in Python. **Welke niet, en waarom?**
+
+---
+layout: chaptertitle
+---
+
+# [LA-2] Vectoren en lineaire combinaties
 
 ---
 layout: image-right
@@ -279,19 +327,19 @@ layout: image-right
 
 Door vectoren te schalen en op te tellen, kunnen we bestaande vectoren combineren:
 
-$$\vec v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \vec u = \begin{bmatrix}3 \\ -1 \end{bmatrix}$$
+$$\ket v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \ket u = \begin{bmatrix}3 \\ -1 \end{bmatrix}$$
 
-&nbsp;
+<hsp />
 
-$$2 \vec v + 3 \vec u = 2 \begin{bmatrix}1 \\ 2 \end{bmatrix} + 3 \begin{bmatrix}3 \\ -1 \end{bmatrix} = \begin{bmatrix}2 \\ 4 \end{bmatrix} + \begin{bmatrix}9 \\ -3 \end{bmatrix} = \begin{bmatrix}12 \\ 1 \end{bmatrix}$$
+$$2 \ket v + 3 \ket u = 2 \begin{bmatrix}1 \\ 2 \end{bmatrix} + 3 \begin{bmatrix}3 \\ -1 \end{bmatrix} = \begin{bmatrix}2 \\ 4 \end{bmatrix} + \begin{bmatrix}9 \\ -3 \end{bmatrix} = \begin{bmatrix}12 \\ 1 \end{bmatrix}$$
 
-In dit geval kunnen we elke vector schrijven als een som van $\vec u$ en $\vec v$.
+In dit geval kunnen we elke vector schrijven als een som van $\ket u$ en $\ket v$.
 
 *Maar...* **Kan dit altijd?**
 
 <div style="font-size: 0.9rem; margin-top: 30px">
 
-**net als bij normale vermenigvuldiging laten we het multiplicatieteken vaak weg bij het scalair product, en gebruiken we $2 \vec x$ als shorthand voor $2 \cdot \vec x$*
+**net als bij normale vermenigvuldiging laten we het multiplicatieteken vaak weg bij het scalair product, en gebruiken we $2 \ket x$ als shorthand voor $2 \cdot \ket x$*
 
 </div>
 
@@ -325,18 +373,18 @@ image: teapot.png
 
 # Basis
 
-- Met een lineair onafhankelijk set van $n$ vectoren kunnen we een $n$ dimensionale ruitme defini&euml;ren
+- Met een lineair onafhankelijk set van $n$ vectoren kunnen we een $n$ dimensionale ruimte defini&euml;ren
 - De vectoren geven een nieuw coordinatensysteem, dit noemen we de *basis*
   - Meestal werken we met de standaardbasis, bijvoorbeeld voor 3D:
 
-  $$\vec x = \begin{bmatrix}1 \\ 0 \\ 0\end{bmatrix} \qquad \vec y = \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix} \qquad \vec z = \begin{bmatrix}0 \\ 0 \\ 1\end{bmatrix}$$
+  $$\ket {e_1} = \begin{bmatrix}1 \\ 0 \\ 0\end{bmatrix} \qquad \ket {e_2} = \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix} \qquad \ket {e_3} = \begin{bmatrix}0 \\ 0 \\ 1\end{bmatrix}$$
   - De vectoren hebben een standaard-lengte $1$ en staan haaks op elkaar --- dit rekent het makkelijkst
 
-&nbsp;
+<hsp />
 
 **We kunnen de vector vectoren nu in termen van de basis schrijven**
 
-$$\vec u = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} \quad \iff \quad \vec u = 1 \vec x + 2 \vec y + 3 \vec z$$
+$$\ket u = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} \quad \iff \quad \ket u = 1 \ket {e_1} + 2 \ket {e_2} + 3 \ket {e_3}$$
 
 ---
 layout: image-right
@@ -347,20 +395,20 @@ image: ltf.gif
 
 - Lengte vectoren niet belangrijk, maar aantal vectoren dat lineair onafhankelijk is, *bijvoorbeeld*
 
-  $$\vec u = \begin{bmatrix}1 \\ 2 \\ 3\end{bmatrix} \qquad \vec v = \begin{bmatrix}3 \\ 2 \\ 1\end{bmatrix} \qquad \vec w = \begin{bmatrix}-2 \\ 0 \\ 2\end{bmatrix}$$
+  $$\ket u = \begin{bmatrix}1 \\ 2 \\ 3\end{bmatrix} \qquad \ket v = \begin{bmatrix}3 \\ 2 \\ 1\end{bmatrix} \qquad \ket w = \begin{bmatrix}-2 \\ 0 \\ 2\end{bmatrix}$$
 
-- De set $\{ \vec u, \vec v, \vec w \}$ is niet lineair onafhankelijk, maar elke subset van twee vectoren is dit wel
+- De set $\big\{ \ket u, \ket v, \ket w \big\}$ is niet lineair onafhankelijk, maar elke subset van twee vectoren is dit wel
 - We hebben een basis voor een 2D-ruimte, niet 3D
 
 ---
 
 # Inwendig product
 
-$$\vec v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \vec u = \begin{bmatrix}3 \\ -1 \end{bmatrix}$$
+**Kunnen we vectoren vermenigvuldigen?** In tegenstelling tot wat we gewend zijn, zijn er meerdere producten voor vectoren. De belangrijkste is het inwendig product $\langle u \mid v \rangle$, dat twee vectoren "vermenigvuldigt" tot een getal:
 
-$$\langle v \mid u \rangle = 1 \cdot 3 + 2 \cdot -1 = 3 - 2 = 1$$
+$$\ket v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \ket u = \begin{bmatrix}3 \\ -1 \end{bmatrix}\qquad\Rightarrow\qquad\langle v \mid u \rangle = 1 \cdot 3 + 2 \cdot -1 = 3 - 2 = 1$$
 
-Het inwendig product wordt ook wel geschreven als $\vec v \cdot \vec u$ of $\langle v, u \rangle$. In bepaalde contexten kun je ook de naam "dot-product" tegenkomen. In python gebruik je de `u.dot(v)` functie of `u @ v`.
+Het inwendig product wordt ook wel geschreven als $\vec v \cdot \vec u$ of $\langle v, u \rangle$. In bepaalde contexten kun je ook de naam "dot-product" tegenkomen. In Python / Numpy gebruik je de `u.dot(v)` functie of `u @ v`.
 
 - De waarde van een inwendig product hangt van een aantal dingen af:
   - Hoe groter de vectoren die erin gaan, hoe groter het inwendig product
@@ -369,7 +417,7 @@ Het inwendig product wordt ook wel geschreven als $\vec v \cdot \vec u$ of $\lan
     - Twee vectoren die van elkaar afwijzen, hebben een negatief product
     - Twee vectoren die haaks op elkaar staan, hebben een product van $0$
 
-&nbsp;
+<hsp />
 
 **Merk op dat de volgorde van de vectoren net zo goed andersom had kunnen zijn, en de uitkomst gelijk was geweest. Toch geven we beide varianten een andere betekenis.**
 
@@ -381,31 +429,124 @@ In de originele berekening hadden we:
 
 $$\langle v \mid u \rangle = 1 \cdot 3 + 2 \cdot -1 = 3 - 2 = 1$$
 
-In dit geval beschouwen we de vector $\vec v$ als een soort van functie, die van de vector $\vec u$ een normaal getal in $\mathbb R$ maakt. In deze context schrijven we $\vec v$ als een rij, en $\vec u$ zoals gebruikelijk als kolom.
+In dit geval beschouwen we de vector $\bra v$ als een soort van functie, die van de vector $\ket u$ een normaal getal in $\mathbb R$ maakt. In deze context schrijven we de vector als $\bra v$, en de waardes ervan in een rij.
 
 $$\begin{bmatrix}1 & 2\end{bmatrix} \begin{bmatrix}3 \\ -1\end{bmatrix}$$
 
-Als we variabelen gebruiken, is een rij vector te schrijven als $\langle v|$, en een kolom als $|u \rangle$. Voor een willekeurige vector $\vec w$ gaan we uit van een kolom-vector $| w \rangle$.
+In het algemeen maken we een onderscheid tussen rij-vectoren (ookwel covectoren), geschreven als $\bra v$, en kolom-vectoren, $\ket u$. Een kolom-vector bevat data, een rij vector bevat gewichten voor een gewogen som.
 
 ### Andersom
 
 $$\langle u \mid v \rangle = \begin{bmatrix}3 & -1\end{bmatrix} \begin{bmatrix}1 \\ 2\end{bmatrix} = 3 \cdot 1 + -1 \cdot 2 = 3 - 2 = 1$$
 
-**De uitkomst is steeds hetzelfde, het verschil tussen rij en kolom zit hem in hoe we de vector zien: als data of als actie.**
+**De uitkomst is steeds gelijk, het verschil tussen kolom en rij zit in hoe we de vector zien: als data of als actie.**
 
+---
+layout: image-right
+image: pythagoras.jpg
+---
+
+# Norm
+
+We kunnnen het inwendig product gebruiken om de lengte van een vector te bepalen:
+
+$$\lvert u \rvert = \sqrt{\langle u\mid u \rangle}$$
+
+Bijvoorbeeld:
+
+$$\ket v = \begin{bmatrix}3 \\ 4 \end{bmatrix}\qquad\qquad \begin{align*}\lvert v \rvert &= \sqrt{\langle u\mid u \rangle} \\&= \sqrt{3^2 + 4^2} \\&= \sqrt{25} \\&= 5\end{align*}$$
+
+Dit is eigenlijk gewoon de formule van Pythagoras:
+
+$$a^2 + b^2 = c^2$$
+
+*De norm van een vector is altijd een normaal getal groter of gelijk aan $0$.*
+
+
+---
+layout: image-right
+image: cos.gif
 ---
 
 # Cosine Similarity
 
+- De waarde van een inwendig product hing af van een aantal dingen:
+  - De lengte van de vectoren
+  - De hoek tussen de vectoren
+
+**Dit kunnen we iets exacter maken:**
+
+*De waarde van het inwendig product is het product van de lengte van beide vectoren met de cosinus van de hoek tussen de vectoren.*
+
+$$\langle u\mid v \rangle
+=\lvert u\vert \vert v\vert \cos\theta$$
+
+Dit geeft de cosine similarity --- een getal dat uitdrukt hoe sterk twee vectoren gelijke richting hebben op een schaal van $-1$ tot $1$:
+
+$$S_C (u,v):= \cos(\theta) = {\langle u \mid v \rangle \over \lvert u\rvert \ \lvert v\rvert}
+= \frac{ \langle u \mid v \rangle }{ \langle u \mid u \rangle \langle v \mid v \rangle }$$
+
+---
+layout: image-right
+image: vec_proj.svg
 ---
 
 # Projecties
 
+We kunnen de normale basisvectoren gebruiken om elementen uit een vector te halen:
+
+$$\ket{e_1} = \begin{bmatrix}1 \\ 0\end{bmatrix}\qquad \ket{e_2} = \begin{bmatrix}0 \\ 1\end{bmatrix}$$
+$$\ket v = \begin{bmatrix}3 \\ 4\end{bmatrix}\qquad \langle e_1 \mid u \rangle = 3\qquad \langle e_2 \mid u \rangle = 4$$
+
+Dit is de projectie van de vector of de $x$- en $y$-as.
+
+Op dezelfde manier kunnen we op een arbitraire vector projecteren, bijvoorbeeld
+
+$$\ket p = \begin{bmatrix}2 \\ 1\end{bmatrix}\qquad \langle p \mid v \rangle = 10 \qquad \frac{\langle p \mid v \rangle}{\langle p \mid p \rangle} = \frac{10}{5} = 2$$
+$$\frac{\langle p \mid v \rangle}{\langle p \mid p \rangle}\ket{p} = 2  \begin{bmatrix}2 \\ 1 \end{bmatrix} = \begin{bmatrix}4 \\ 2 \end{bmatrix}$$
+
+---
+layout: image-right
+image: vec_proj.svg
+---
+
+# Decompositie
+
+Gegeven
+$$\ket v = \begin{bmatrix}3 \\ 4\end{bmatrix}\qquad \ket p = \begin{bmatrix}2 \\ 1\end{bmatrix}$$
+
+hebben we de projectie $\text{proj}_p(v)$ van $\ket v$ op $\ket p$ berekend met
+$$\frac{\langle p \mid v \rangle}{\langle p \mid p \rangle}\ket{p} = 2  \begin{bmatrix}2 \\ 1 \end{bmatrix} = \begin{bmatrix}4 \\ 2 \end{bmatrix}$$
+
+Hiermee kunnen we de vector $\ket v$ in twee&euml;n splitsen:
+- Het deel parallel aan $\ket p$, i.e. ${\color{magenta}\ket v_{\parallel p}} = \text{proj}_{\color{#0099ff}p}({\color{red}v})$
+- Het deel haaks op $\ket p$, i.e. ${\color{orange}\ket v_{\perp p}} = \ket v - {\color{magenta}\ket v_{\parallel p}}$
+
+---
+layout: chaptertitle
+---
+
+# [LA-3] Matrices en Tensoren
+
 ---
 
 # Transformaties
+
+Werken op indivivuele vectoren, maar ook op hele ruimtes.
+
 - Lineair
+  - Uitrekken / Schalen
+  - Rotatie
+  - Shears
+
 - Niet Lineair
+  - Voorbeeld GIF?
+
+---
+
+# Lineaire transformaties
+
+definitie obv parallele lijnen etc
 
 ---
 
@@ -420,13 +561,21 @@ Lineaire functies van vectoren naar vectoren
 Rij/kolom elementen
 - Mogelijk row/column/null?
 
-## Covectoren
+---
+
+# Covectoren
+
+plots
 
 ---
 
 # 2-forms
 
 Lineaire functies van 2 vectoren naar een getal
+
+---
+
+# Currying
 
 ---
 
@@ -438,11 +587,39 @@ Bijv: lineaire functie van 2 vectoren naar 1 vector
 
 ---
 
-# Calculus
+# Portfolio-item LA-I
+
+---
+layout: chaptertitle
+---
+
+# [LA-4] Lineaire Algebra voor (deep) learning
+
+---
+
+# Koppeling NN
+
+---
+
+# Affine transformaties / Homogene Coordinaten
+
+tbv bias term
+
+---
+layout: chaptertitle
+---
+
+## Calculus
+
+---
+
+# Terugblik S3
 
 ---
 
 # Afgeleide van een getal-wise functie -> sigmoid?
+
+tbv NN
 
 ---
 
@@ -456,10 +633,104 @@ Bijv: lineaire functie van 2 vectoren naar 1 vector
 # Afgeleides van matrix-producten / tensoren etc
 
 ---
+layout: chaptertitle
+---
 
-# Convoluties?
+# [LA-5] Dimensionaliteits-reductie met PCA
 
-- Nee, later pas, ander slidedeck
+---
+
+# Dimensionaliteits-reductie
+
+- Wat willen we bereiken?
+- Terugblik colour space les 1
+
+---
+
+# Coordinaatstelsels en basis-vectoren
+
+---
+
+# Covariantie-matrix
+
+---
+
+# Eigenvectoren
+
+---
+
+# Eigenbasis
+
+---
+
+# Lagrange
+
+---
+
+# Principal Component Analysis
+
+---
+
+# Factor Analysis
+
+---
+layout: chaptertitle
+---
+
+# [LA-6] Data-embedding
+
+---
+
+# Nadelen PCA
+
+---
+
+# T-SNE
+
+- Wat doet het?
+
+---
+
+# T-SNE
+
+High leven overview stappen
+
+---
+
+# Gelijkenissen in hogere dimensies
+
+---
+
+# Gelijkenissen in lagere dimensies
+
+---
+
+# Student's T-distribution
+
+---
+
+# Verplaatsen van datapunten
+
+---
+
+# Voorbeelden data
+
+- Eerste intro images / word embeddings?
+
+---
+
+# Portfolio-item LA-II
+
+---
+layout: chaptertitle
+---
+
+# [LA-7] Denouement
+
+---
+
+# Overige onderwerpen
+- Dit is na de toetsing, voor nu reserveren voor flow-over?
 
 ---
 layout: chaptertitle
