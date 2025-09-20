@@ -177,7 +177,7 @@ image: lalg.png
 
 $$\ket v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \ket u = \begin{bmatrix}3 \\ -1 \end{bmatrix}$$
 
-$\ket v$ en $\ket u$ zijn vectoren in een 2D ruimte. $\ket v$ is te lezen als het coordinaat $X = 1,\ Y = 2$.
+$\ket v$ en $\ket u$ zijn vectoren in een 2D ruimte. $\ket v$ is te lezen als het coordinaat $X = 1,\ Y = 2$. Doorgaans hebben we het niet over $X$ en $Y$, maar over elementen o.b.v. een vector en index: $u_1 = 3$ en $u_2 = -1$.
 
 **Teken deze punten op een vel papier met een assenstelsel. Teken voor beide punten een pijl van de oorsprong naar het coordinaat.**
 
@@ -529,30 +529,178 @@ layout: chaptertitle
 # [LA-3] Matrices en Tensoren
 
 ---
+layout: image-right
+image: conformal.gif
+---
 
 # Transformaties
 
-Werken op indivivuele vectoren, maar ook op hele ruimtes.
+Functies werken op indivivuele vectoren, maar ook op hele ruimtes.
 
-- Lineair
+- Lineaire transformaties
   - Uitrekken / Schalen
   - Rotatie
   - Shears
 
-- Niet Lineair
-  - Voorbeeld GIF?
+- Niet-lineaire transformaties
+  - Buiten de focus van lineaire algebra
+  - Wel belangrijk in bijv. neurale netwerken
+    - *Activatielaag*
+  - Kan nog steeds afgekaderd zijn, e.g. conforme afbeelding
 
 ---
 
 # Lineaire transformaties
 
-definitie obv parallele lijnen etc
+Een transformatie is lineair als deze:
+- De oorsprong in stand houdt, d.w.z. de nul-vector blijft de nul-vector
+- Parallelle lijnen blijven parallel
+- Afstanden behouden dezelfde verhouding
+- Oppervlaktes schalen met een vaste factor
 
+<hsp />
+
+**Een lineaire transformatie in $n$-dimensies is te defini&euml;ren met $n$ vectoren binnen deze ruimte: elke vector beschrijft dan waar exact een basis-vector naartoe getransformeerd wordt.**
+
+*Alle andere vectoren zijn te formuleren als lineaire combinaties van de basis-vectoren, een getransformeerde vector is dezelfde lineaire combinatie van de getransformeerde basisvectoren.*
+
+---
+
+# Demo
+
+ <iframe src="lin_trans.html" width="100%" height="90%"></iframe> 
+
+---
+layout: image-right
+image: thematrix.jpg
 ---
 
 # Matrices
 
-Lineaire functies van vectoren naar vectoren
+Een lineaire functie van vector naar vector in $n$ dimensies is te schrijven met $n$ vectoren (met elk $n$ elementen). Dit betekent dat $n \times n$ getallen genoeg zijn om een lineaire transformatie uit te drukken.
+
+- Omdat we hier vaak mee moeten werken speciale notatie: *de matrix*
+
+$$\mathbf{M} = \begin{bmatrix}1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9\end{bmatrix} \qquad \mathbf M \in \mathbb R^{3 \times 3}$$
+
+- Matrices zijn een op zichzelf staand wiskundig object
+  - Getypeerd o.b.v. dimensies (2 getallen), niet per s&eacute; vierkant
+  - Voldoen aan alle eisen van vectoren (optellen, schalen)
+
+---
+
+# Matrix-vector Multiplicatie
+
+- Om een matrix-transformatie op een vector toe te passen, gebruiken we een vermenigvuldiging of product.
+- Hiertoe gaan we de matrix beschouwen als een rij van kolommen:
+
+$$\mathbf{M} = \begin{bmatrix}1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9\end{bmatrix} = \begin{bmatrix}\begin{bmatrix} 1 \\ 4 \\ 7\end{bmatrix}  & \begin{bmatrix}2 \\ 5 \\ 8\end{bmatrix}  & \begin{bmatrix}3 \\ 6 \\ 9\end{bmatrix} \end{bmatrix} \qquad\qquad \ket v = \begin{bmatrix}1 \\0 \\-1\end{bmatrix}$$
+
+- Met deze matrix notatie en de voorbeeld-vector $\ket v$ kunnen we dezelfde stappen toepassen als in het inwendig product:
+  -  ~~Elke waarde uit de rij-vector~~ **elke kolom uit de matrix** wordt vermenigvuldigd met elke waarde uit de kolom-vector
+  - Het resultaat wordt bij elkaar opgeteld
+
+$$\mathbf{M}\ket v = \begin{bmatrix}\begin{bmatrix} 1 \\ 4 \\ 7\end{bmatrix}  & \begin{bmatrix}2 \\ 5 \\ 8\end{bmatrix}  & \begin{bmatrix}3 \\ 6 \\ 9\end{bmatrix} \end{bmatrix} \begin{bmatrix}1 \\0 \\-1\end{bmatrix} = 1\begin{bmatrix}1 \\ 4 \\ 7 \end{bmatrix} + 0\begin{bmatrix}2 \\ 5 \\ 8 \end{bmatrix} -1\begin{bmatrix}3 \\ 6 \\ 9 \end{bmatrix} = \begin{bmatrix}-2 \\ -2 \\ -2 \end{bmatrix} $$
+
+---
+
+# Niet vierkante matrices
+
+Een matrix hoeft niet vierkant te zijn; voor vermenigvuldiging met een vector is alleen van belang dat de matrix het juiste aantal kolommen heeft:
+
+$$\begin{bmatrix}\begin{bmatrix} 1 \\ 4 \end{bmatrix}  & \begin{bmatrix}2 \\ 5 \end{bmatrix}  & \begin{bmatrix}3 \\ 6 \end{bmatrix} \end{bmatrix} \begin{bmatrix}1 \\0 \\-1\end{bmatrix} = 1\begin{bmatrix}1 \\ 4  \end{bmatrix} + 0\begin{bmatrix}2 \\ 5  \end{bmatrix} -1\begin{bmatrix}3 \\ 6  \end{bmatrix} = \begin{bmatrix}-2 \\ -2  \end{bmatrix} $$
+
+Hier werd een 3D vector door een rechthoekige matrix naar $\mathbb R^2$ getransformeerd.
+
+$$\begin{bmatrix}\begin{bmatrix} 1 \\ 4 \\ 7\end{bmatrix}  & \begin{bmatrix}2 \\ 5 \\ 8\end{bmatrix}  \end{bmatrix} \begin{bmatrix}6 \\3 \end{bmatrix} = 6\begin{bmatrix}1 \\ 4 \\ 7 \end{bmatrix} + 3\begin{bmatrix}2 \\ 5 \\ 8 \end{bmatrix} = \begin{bmatrix}12 \\ 39 \\ 66 \end{bmatrix} $$
+
+Hier werd een 2D vector in $\mathbb R^3$ geplaatst. **Merk op deze matrix maar 2 basis-vectoren kan gebruiken om 3D-vectoren mee te bouwen, dus alle vectoren die uit deze transformatie komen zullen in een 2D vlak liggen binnen de 3D ruimte.**
+
+---
+
+# Matrix-matrix multiplicatie
+
+We kunnen ook twee matrices met elkaar vermenigvuldigen.
+- Conceptueel betekent dit dat we twee lineaire transformaties combineren door ze na elkaar toe te passen.
+- $\mathbf N \mathbf M$ betekent dat eerst $\mathbf{M}$ wordt toegepast, en daarna $\mathbf{N}$.
+  - We gaan dus van rechts naar links, net als bij functies: $\mathbf N \mathbf M \ket x \cong N(M(x))$
+
+## Calculatie
+Om twee matrices te vermenigvuldigen, beschouwen we een matrix als een kolom van rijen, en een als een rij van kolommen:
+
+$$\mathbf M = \begin{bmatrix}1 & 0 \\ 2 & -1\end{bmatrix} \qquad\mathbf N = \begin{bmatrix}3 & 4 \\ 5 & 0\end{bmatrix}$$
+$$\Downarrow$$
+$$\mathbf M = \begin{bmatrix}\begin{bmatrix}1 & 0 \end{bmatrix} \\[2mm] \begin{bmatrix}2 & -1 \end{bmatrix}\end{bmatrix} \qquad \mathbf N = \begin{bmatrix}\begin{bmatrix}3 \\ 5\end{bmatrix} & \begin{bmatrix} 4 \\ 0 \end{bmatrix} \end{bmatrix}
+\\[5mm]
+
+---
+
+# Matrix-matrix multiplicatie
+
+Om deze berekening uit te voeren gaan we een kolom-rij vermenigvuldiging uitvoeren - **dit is iets anders dan de rij-kolom vermenigvuldiging van het inwendig product!**
+
+*Bij een kolom-rij product zetten we systematisch alle combinaties van elementen in een matrix:*
+
+$$\begin{align*}\mathbf M \mathbf N &=
+\begin{bmatrix}\begin{bmatrix}1 & 0 \end{bmatrix} \\[2mm] \begin{bmatrix}2 & -1 \end{bmatrix}\end{bmatrix}
+\begin{bmatrix}\begin{bmatrix}3 \\ 5\end{bmatrix} & \begin{bmatrix} 4 \\ 0 \end{bmatrix} \end{bmatrix}
+\\[5mm]
+&= \begin{bmatrix}
+\color{pink} \begin{bmatrix}1 & 0\end{bmatrix}  \begin{bmatrix}3 \\ 5 \end{bmatrix} &
+\color{lightgreen} \begin{bmatrix} 2 & -1\end{bmatrix}  \begin{bmatrix}3 \\ 5 \end{bmatrix} \\[3mm]
+\color{lightblue} \begin{bmatrix}1 & 0\end{bmatrix}  \begin{bmatrix}4 \\ 0 \end{bmatrix} &
+\color{lightyellow}\begin{bmatrix} 2 & -1\end{bmatrix}  \begin{bmatrix}4 \\ 0 \end{bmatrix}
+\end{bmatrix} \\[8mm]
+&= \begin{bmatrix}\color{pink} 1 \cdot 3 + 0 \cdot 5 & \color{lightgreen} 2 \cdot 3  - 1 \cdot 5 \\ \color{lightblue} 1 \cdot 4 + 0 \cdot 0 & \color{lightyellow} 2 \cdot 4 -1 \cdot 0 \end{bmatrix} \\[5mm]
+&= \begin{bmatrix}\color{pink} 3 & \color{lightgreen} 1 \\ \color{lightblue} 4 & \color{lightyellow} 8 \end{bmatrix} \\[5mm]
+\end{align*}$$
+
+---
+
+# Op basis van index
+
+---
+
+# Matrices als getallen
+
+- Matrix-vermenigvuldiging geeft een tweede manier om 2 matrices tot 1 te combineren (naast optellen)
+- Voor vierkante matrices blijft het resultaat in de familie: $\mathbb R^{n\times n} \times \mathbb R^{n\times n} \to \mathbb R^{n\times n}$
+- Matrices zijn daarmee  te beschouwen als een soort supercharged getallen (!)
+
+<hsp />
+
+### Rekenregels
+Vrijwel alle rekenregels voor re&euml;ele getallen gaan ook op voor matrices:
+- Identiteit (vermenigvuldiging)
+$$\mathbf I = \begin{bmatrix}1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix}$$
+- Distributie $\mathbf M (\mathbf N + \mathbf O) = \mathbf M \mathbf N + \mathbf M \mathbf O$ en $(\mathbf M + \mathbf N) \mathbf O = \mathbf M \mathbf O + \mathbf N \mathbf O$ 
+- Associativiteit: $\mathbf M (\mathbf N \mathbf O) = (\mathbf M \mathbf N) \mathbf O)$
+- **Maar niet commutativiteit**: $\mathbf N \mathbf O \not= \mathbf O \mathbf N$ **!**
+  - *(voor 2 specifieke matrices kan het zo uitkomen dat de volgorde niet uitmaakt)*
+
+
+
+
+---
+
+# Systemen van vergelijkingen
+- Ook te lezen als een systeem van drie vergelijkingen met 3 onbekenden:
+
+$$1x + 2y + 3z$$
+$$4x + 5y + 6z$$
+$$7x + 8y + 9z$$
+
+---
+
+# Determinant
+
+---
+
+# Gauss-Jordan Eliminatie
+
+---
+
+# Transpositie
 
 ---
 
@@ -587,6 +735,12 @@ Bijv: lineaire functie van 2 vectoren naar 1 vector
 
 ---
 
+# Tensor Product
+
+ketbra
+
+---
+
 # Portfolio-item LA-I
 
 ---
@@ -611,9 +765,13 @@ layout: chaptertitle
 
 ## Calculus
 
+
 ---
 
 # Terugblik S3
+
+https://github.com/AI-S3-2025/S3_AI_lesmateriaal/blob/main/WiskundigeTechnieken/wiskunde_les3.ipynb
+https://github.com/AI-S3-2025/S3_AI_lesmateriaal/blob/main/WiskundigeTechnieken/wiskunde_les4.ipynb
 
 ---
 
@@ -731,6 +889,10 @@ layout: chaptertitle
 
 # Overige onderwerpen
 - Dit is na de toetsing, voor nu reserveren voor flow-over?
+
+---
+
+# Matrices en grafen
 
 ---
 layout: chaptertitle

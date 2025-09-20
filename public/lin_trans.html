@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file is based on https://github.com/not-fl3/macroquad#wasm -->
+    <title>Linear Transformation Explorer</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(18, 18, 18);
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        canvas {
+            outline-style: none;
+            box-shadow: none;
+            border-color: transparent;
+        }
+
+        #throbber {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        dialog > p:first-child {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: right;
+            color: gray;
+            margin-top: 1em;
+            font-size: 0.8em;
+        }
+
+        footer a {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div id="throbber">
+        <!-- https://commons.wikimedia.org/wiki/File:Chromiumthrobber.svg -->
+        <svg width="16" height="16" viewBox="0 0 300 300"
+        xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <path d="M 150,0
+                    a 150,150 0 0,1 106.066,256.066
+                    l -35.355,-35.355
+                    a -100,-100 0 0,0 -70.711,-170.711 z"
+                fill="#bbbbbb">
+                <animateTransform attributeName="transform" attributeType="XML"
+                        type="rotate" from="0 150 150" to="360 150 150"
+                        begin="0s" dur="1s" fill="freeze" repeatCount="indefinite" />
+            </path>
+        </svg>
+    </div>
+    <div id="glcanvas-wrapper">
+        <canvas id="glcanvas" tabindex="1"></canvas>
+        <footer>Learn more about this prototype in the <a href="https://github.com/toolness/macroquad-fun#readme" target="_blank">README</a>.</footer>
+    </div>
+    <script src="https://not-fl3.github.io/miniquad-samples/gl.js"></script>
+    <script type="module">
+
+const config = await (await fetch("config.json")).json();
+const width = config.screen_width * config.scale;
+const height = config.screen_height * config.scale;
+const canvas = document.getElementById("glcanvas");
+const canvasWrapper = document.getElementById("glcanvas-wrapper");
+
+canvas.style = `width: ${width}px; height: ${height}px`;
+
+function maybeScaleCanvas() {
+    const { innerWidth, innerHeight } = window;
+    let scale = 1.0;
+
+    if (innerWidth < width || innerHeight < height) {
+        scale = Math.min(innerWidth / width, innerHeight / height);
+    }
+
+    if (scale !== 1.0) {
+        canvasWrapper.style = `transform-origin: top-left; transform: scale(${scale});`;
+    } else {
+        canvasWrapper.style = "";
+    }
+}
+
+window.addEventListener("resize", maybeScaleCanvas);
+
+maybeScaleCanvas();
+
+const DEBUG = false;
+
+function getServerOrigin() {
+    if (window.location.hostname === "localhost") {
+        return "http://localhost:1122";
+    }
+    return "https://macroquad-fun.toolness.org";
+}
+
+miniquad_add_plugin({
+    register_plugin(importObject) {
+        importObject.env.does_browser_support_ogg = 0;
+
+        importObject.env.init_version = (ptr) => {
+            version = UTF8ToString(ptr);
+            const throbber = document.getElementById("throbber");
+            if (throbber) {
+                throbber.parentNode.removeChild(throbber);
+            }
+        };
+    }
+})
+
+
+load("lin_trans.wasm");
+
+    </script>
+</body>
+</html>
+
