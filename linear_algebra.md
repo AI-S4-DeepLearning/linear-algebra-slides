@@ -484,7 +484,13 @@ $$\langle u\mid v \rangle
 Dit geeft de cosine similarity --- een getal dat uitdrukt hoe sterk twee vectoren gelijke richting hebben op een schaal van $-1$ tot $1$:
 
 $$S_C (u,v):= \cos(\theta) = {\langle u \mid v \rangle \over \lvert u\rvert \ \lvert v\rvert}
-= \frac{ \langle u \mid v \rangle }{ \langle u \mid u \rangle \langle v \mid v \rangle }$$
+= \frac{ \langle u \mid v \rangle }{ \sqrt{\langle u \mid u \rangle} \sqrt{\langle v \mid v \rangle} }$$
+
+---
+
+# Cosine Similarity in de praktijk
+
+- Voorbeeld recommender systems
 
 ---
 layout: image-right
@@ -672,6 +678,22 @@ $$\mathbf I = \begin{bmatrix}1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix}$$
   - *(voor 2 specifieke matrices kan het zo uitkomen dat de volgorde niet uitmaakt)*
 
 
+---
+
+# Norm van een matrix
+
+Net als bij vectoren kun je van een matrix de norm berekenen. Er zijn diverse normen voor matrices in gebruik, wij zullen kijken naar de **Frobenius norm** $\lVert \mathbf M \rVert_F$ . Deze lijkt op de norm die we bij vectoren gezien hebben.
+
+- De Frobenius norm is de wortel van het Frobenius (inner) product van de matrix met zichzelf. Hier worden alle elementen paarsgewijs met elkaar vermenigvuldigd, en worden de getallen bij elkaar opgeteld.
+
+$$\lVert \mathbf M \rVert_F = \sum_i^m \sum_j^n\;\lvert M_i^j \rvert^2$$
+
+  - Dit komt overeen met de vector norm die we gezien hebben, als we alle getallen in de matrix als &eacute;&eacute;n vector beschouwen.
+
+<hsp />
+<hsp />
+
+*De tussenstap, waarin we ieder item paarsgewijs vermenigvuldigen wordt het Hadamard-product genoemd: $\mathbf M \odot \mathbf N$. Voor de norm nemen we het Hadamard-product van $\mathbf M$ met zichzelf. Hoewel we dit product niet vaak tegenkomen, is het belangrijk om te kennen: dit is het product dat Numpy gebruikt als je `m * m` doet.*
 
 ---
 layout: chaptertitle
