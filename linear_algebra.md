@@ -490,7 +490,21 @@ $$S_C (u,v):= \cos(\theta) = {\langle u \mid v \rangle \over \lvert u\rvert \ \l
 
 # Cosine Similarity in de praktijk
 
-- Voorbeeld recommender systems
+Zelfs zonder ingewikkelde algoritmes geeft de cosine similarity al een hoop functionaliteit. Bijvoorbeeld:
+
+We kunnen een verzameling films "embedden" in een vector-ruimte:
+- We kiezen een set features, zoals genre, regiseur, acteur, keywords.
+- We geven elke film een vector, waarbij we voor elke feature een $0$ of $1$ invullen (niet of wel van toepassing).
+We kunnen nu de cosine similarity gebruiken om met een enkele berekening vast te stellen in hoeverre twee films op elkaar lijken.
+
+<hsp />
+<hsp />
+<hsp />
+
+## Recommender System
+Als we nu ook voor een gebruiker de ratings van films kennen, kunnene we een gewogen som nemen van de beoordeelde films, waarbij we de weging van de rating af laten hangen.
+
+*De gebruiker heeft nu een embedding in dezelfde ruimte, die de "ideale" film benadert. Door van nog onbekende films de cosine similarity te berekenen kunnen we een gesorteerde lijst van relevante films maken.*
 
 ---
 layout: image-right
