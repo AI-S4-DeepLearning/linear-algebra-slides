@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="210mm"
+   viewBox="0 0 210 210"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="xor2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.96756968"
+     inkscape:cx="505.38996"
+     inkscape:cy="548.28093"
+     inkscape:window-width="1868"
+     inkscape:window-height="1125"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ArrowTriangleStylized"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Stylized triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m 6,0 c -3,1 -7,3 -9,5 0,0 0,-4 2,-5 -2,-1 -2,-5 -2,-5 2,2 6,4 9,5 z"
+         id="path4" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5"
+       transform="translate(0,-26.458334)">
+      <circle
+         style="opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+         id="path1"
+         cx="48.726562"
+         cy="70.870827"
+         r="18.5625" />
+      <circle
+         style="opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+         id="circle1"
+         cx="48.726562"
+         cy="129.07915"
+         r="18.5625" />
+    </g>
+    <g
+       id="g4"
+       transform="translate(3.0517578e-5,-26.458334)">
+      <circle
+         style="opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+         id="circle2"
+         cx="112.22655"
+         cy="70.870827"
+         r="18.5625" />
+      <circle
+         style="opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+         id="circle3"
+         cx="112.22655"
+         cy="129.07915"
+         r="18.5625" />
+    </g>
+    <circle
+       style="opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       id="circle4"
+       cx="175.72659"
+       cy="73.51667"
+       r="18.5625" />
+    <rect
+       style="opacity:0.98876;fill:none;stroke:#ff00aa;stroke-width:0.7;stroke-dasharray:1.4, 1.4;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5"
+       width="15.996221"
+       height="83.876343"
+       x="71.247932"
+       y="31.578485" />
+    <rect
+       style="opacity:0.98876;fill:none;stroke:#ff00aa;stroke-width:0.7;stroke-dasharray:1.4, 1.4;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect6"
+       width="13.535156"
+       height="68.016159"
+       x="136.67981"
+       y="39.508572" />
+    <path
+       style="opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
+       d="M 67.289063,44.41249 H 91.547409"
+       id="path8"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
+       d="M 67.289063,102.62083 H 91.547409"
+       id="path9"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
+       d="M 67.289063,102.62083 91.547409,49.704178"
+       id="path10"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
+       d="M 67.289063,44.41249 91.547409,97.329143"
+       id="path11"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
+       d="M 130.78908,102.62083 155.04744,76.162515"
+       id="path12"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
+       d="m 130.78908,44.41249 24.25836,26.458332"
+       id="path13"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="77.114128"
+       y="42.099171"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#00aaff;fill-opacity:1;stroke:none;stroke-width:0.7"
+         x="77.114128"
+         y="42.099171">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="77.114128"
+       y="110.89083"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan14"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#00aaff;fill-opacity:1;stroke:none;stroke-width:0.7"
+         x="77.114128"
+         y="110.89083">-2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="76.055801"
+       y="92.37001"
+       id="text15"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#00aaff;fill-opacity:1;stroke:none;stroke-width:0.7"
+         x="76.055801"
+         y="92.37001">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="72.880791"
+       y="55.328339"
+       id="text16"><tspan
+         sodipodi:role="line"
+         id="tspan16"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#00aaff;fill-opacity:1;stroke:none;stroke-width:0.7"
+         x="72.880791"
+         y="55.328339">-2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="140.61412"
+       y="53.211689"
+       id="text17"><tspan
+         sodipodi:role="line"
+         id="tspan17"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#00aaff;fill-opacity:1;stroke:none;stroke-width:0.7"
+         x="140.61412"
+         y="53.211689">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="140.61412"
+       y="99.778313"
+       id="text18"><tspan
+         sodipodi:role="line"
+         id="tspan18"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#00aaff;fill-opacity:1;stroke:none;stroke-width:0.7"
+         x="140.61412"
+         y="99.778313">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="108.28693"
+       y="47.855804"
+       id="text19"><tspan
+         sodipodi:role="line"
+         id="tspan19"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#00aaff;fill-opacity:1;stroke:none;stroke-width:0.7"
+         x="108.28693"
+         y="47.855804">-1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="109.64667"
+       y="106.06413"
+       id="text20"><tspan
+         sodipodi:role="line"
+         id="tspan20"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#00aaff;fill-opacity:1;stroke:none;stroke-width:0.7"
+         x="109.64667"
+         y="106.06413">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:none;stroke:#00aaff;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="171.59048"
+       y="76.846252"
+       id="text21"><tspan
+         sodipodi:role="line"
+         id="tspan21"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#00aaff;fill-opacity:1;stroke:none;stroke-width:0.7"
+         x="171.59048"
+         y="76.846252">-3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="71.293297"
+       y="126.76579"
+       id="text22"><tspan
+         sodipodi:role="line"
+         id="tspan22"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="71.293297"
+         y="126.76579">W<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan24">(1)</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="137.43916"
+       y="118.29909"
+       id="text26"><tspan
+         sodipodi:role="line"
+         id="tspan26"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="137.43916"
+         y="118.29909">W<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan25">(2)</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="39.813877"
+       y="169.24011"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="39.813877"
+         y="169.24011">W<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan29">(1)</tspan> =</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="132.41808"
+       y="169.24011"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="132.41808"
+         y="169.24011">W<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan30">(2)</tspan> =</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="81.59201"
+       y="160.2751"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:center;text-anchor:middle;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="81.59201"
+         y="160.2751">2</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:center;text-anchor:middle;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="81.59201"
+         y="179.92168"
+         id="tspan7">-2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="174.75137"
+       y="170.09839"
+       id="text9"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="174.75137"
+         y="170.09839"
+         id="tspan10">2  2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.559px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="128.44467"
+       y="97.492836"
+       id="text12"
+       transform="scale(0.55715726,1.7948254)"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="128.44467"
+         y="97.492836">[</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.1232px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="211.70906"
+       y="134.59489"
+       id="text23"
+       transform="scale(0.78793935,1.2691332)"><tspan
+         sodipodi:role="line"
+         id="tspan23"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="211.70906"
+         y="134.59489">[</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.1232px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="-252.68575"
+       y="134.59489"
+       id="text27"
+       transform="scale(-0.78793935,1.2691332)"><tspan
+         sodipodi:role="line"
+         id="tspan27"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="-252.68575"
+         y="134.59489">[</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.559px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="-192.09305"
+       y="97.492836"
+       id="text42"
+       transform="scale(-0.55715726,1.7948254)"><tspan
+         sodipodi:role="line"
+         id="tspan42"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="-192.09305"
+         y="97.492836">[</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="83.869148"
+       y="144.75743"
+       id="text44"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.93889px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="50.126629"
+         y="144.75743"
+         id="tspan44">neuron 1 naar 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="109.65224"
+       y="144.75743"
+       id="text45"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.93889px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="92.459953"
+         y="144.75743"
+         id="tspan45">2 naar 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="83.869148"
+       y="189.73668"
+       id="text46"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.93889px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="83.869148"
+         y="189.73668"
+         id="tspan46">1 naar 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="109.65224"
+       y="189.73668"
+       id="text47"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.93889px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:end;text-anchor:end;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="109.65224"
+         y="189.73668"
+         id="tspan47">2 naar 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.3403px;line-height:1.1;font-family:Junicode;-inkscape-font-specification:Junicode;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.98876;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       x="97.525253"
+       y="160.2751"
+       id="text64"><tspan
+         sodipodi:role="line"
+         id="tspan63"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:center;text-anchor:middle;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="97.525253"
+         y="160.2751">2</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';text-align:center;text-anchor:middle;fill:#ff00aa;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="97.525253"
+         y="179.92168"
+         id="tspan64">-2</tspan></text>
+  </g>
+</svg>

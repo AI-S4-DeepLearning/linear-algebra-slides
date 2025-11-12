@@ -209,13 +209,13 @@ image: vec_add.svg
 # Regels voor optellen
 
 
-### Associativiteit 
-$$\ket u + \ket v = \ket v + \ket u$$
 ### Commutativiteit
+$$\ket u + \ket v = \ket v + \ket u$$
+### Associativiteit 
 $$\big(\ket u + \ket v\big) + \ket w = \ket u + \big(\ket v + \ket w\big)$$
 ### Identiteit
 $$\exist\ \ket 0 \text{ zodat } \ket 0 + \ket v = \ket v = \ket v + \ket 0$$
-**Er bestaat voor iedere ruimte een vector $\ket 0$ die als nul-element fungeert**
+**Er bestaat voor iedere ruimte een vector $\ket 0$ die als nul fungeert (in de literatuur: neutraal element)**
 $$\ket 0 = \begin{bmatrix} 0 \\ \vdots \\ 0 \end{bmatrix}$$
 
 ---
@@ -230,7 +230,7 @@ $$2 - 1 = 2 + (-1)$$
 
 ### Inverse
 $$\forall\ \ket v\ \ \exists\ket{-v} \text{ zodat }  \ket v + \ket{-v} = \ket 0$$
-**Er bestaat voor elke vector $\ket v$ in iedere ruimte een inverse $-\ket v$**
+**Er bestaat voor elke vector $\ket v$ in iedere ruimte een inverse $\ket{-v}$**
 
 $$\ket{v} = \begin{bmatrix}1 \\ 2 \end{bmatrix} \iff \ket{-v} = \begin{bmatrix} -1 \\ -2 \end{bmatrix}$$
 $$\ket{u} = \begin{bmatrix}3 \\ -1 \end{bmatrix} \iff \ket{-u} = \begin{bmatrix} -3 \\ 1 \end{bmatrix}$$
@@ -354,6 +354,8 @@ layout: image-right
   - Voorwaarde: de twee vectoren liggen niet op &eacute;&eacute;n lijn
   - Werkt voor alle combinaties van 2 vectoren die geen veelvoud van elkaar zijn
 
+> TODO Kom ik op elk punt (omgekeerd tov coordinaten)
+
 ---
 layout: image-left
 image: teapot.png
@@ -382,7 +384,7 @@ image: teapot.png
 
 <hsp />
 
-**We kunnen de vector vectoren nu in termen van de basis schrijven**
+**We kunnen de vector vectoren nu in termen van de basis schrijven, als lineaire combinatie van de basis-vectoren.**
 
 $$\ket u = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} \quad \iff \quad \ket u = 1 \ket {e_1} + 2 \ket {e_2} + 3 \ket {e_3}$$
 
@@ -687,7 +689,7 @@ Vrijwel alle rekenregels voor re&euml;ele getallen gaan ook op voor matrices:
 - Identiteit (vermenigvuldiging)
 $$\mathbf I = \begin{bmatrix}1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix}$$
 - Distributie $\mathbf M (\mathbf N + \mathbf O) = \mathbf M \mathbf N + \mathbf M \mathbf O$ en $(\mathbf M + \mathbf N) \mathbf O = \mathbf M \mathbf O + \mathbf N \mathbf O$ 
-- Associativiteit: $\mathbf M (\mathbf N \mathbf O) = (\mathbf M \mathbf N) \mathbf O)$
+- Associativiteit: $\mathbf M (\mathbf N \mathbf O) = (\mathbf M \mathbf N) \mathbf O$
 - **Maar niet commutativiteit**: $\mathbf N \mathbf O \not= \mathbf O \mathbf N$ **!**
   - *(voor 2 specifieke matrices kan het zo uitkomen dat de volgorde niet uitmaakt)*
 
@@ -847,9 +849,9 @@ Voor $\mathbf{M} = \begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmat
 
 # Niet vierkante matrices
 
-- Hebben geen determinant en is niet omkeerbaar.
+- Hebben geen determinant en zijn niet omkeerbaar.
 - Zijn met elkaar te vermenigvuldigen, afhankelijk van de vormen van beide matrices:
-$$\mathbb R^{m\times n} \times \mathbb R^{n \times k} \to \mathbb R^{m \times k}$$
+$$\mathbb R^{\textcolor{#00aaff}{m}\times \textcolor{red}{n}} \times \mathbb R^{\textcolor{red}{n} \times \textcolor{#00aaff}{k}} \to \mathbb R^{\textcolor{#00aaff}{m} \times \textcolor{#00aaff}{k}}$$
 - De vorm van het resultaat is bepaald door de vorm van de beide matrices.
 - Een manier om dit te checken, de vorm van het resultaat te weten, en de berekening van de elementen te onthouden is als volgt:
 
@@ -1232,14 +1234,90 @@ layout: chaptertitle
 # [LA-4] Lineaire Algebra voor (deep) learning
 
 ---
+layout: image-left
+image: neurons.jpg
+---
 
-# Koppeling NN
+# Neurale Netwerken
+
+- In een neuraal netwerk wordt de waarde van een neuron (voordat een eventuele activatie-functie wordt toegepast) bepaald door een gewogen som van de output waardes van de neuronen in de laag ervoor.
+  - Dit lijkt behoorlijk op het inwendig product van twee vectoren: een vector met data, en een covector met de gewichten.
+- Dit inwendig product bepalen we voor alle neuronen in een laag. Als we de laag als een vector beschouwen, is ieder neuron een inwendig product, waarbij de vector steeds hetzelfde is (de input-laag in vector vorm) en de covector steeds anders is.
+  - Dit lijkt behoorlijk op een matrix-vector product: alle gewichten tussen de twee lagen vormen samen een matrix.
+
+---
+layout: image-right
+image: nn.jpeg
+---
+
+# Waarom vectoren?
+
+De voordelen van deze representatie zitten met name in de weergave en het uitvoeren van de berekening:
+
+- Het is wat compacter opgeschreven.
+  - Dit vergt even wennen aan de notatie, er gebeurt meer in een korte formule, maar daarna scheidt het effectief de ruis (exacte sommen) van de conceptuele berekening.
+- Het worden niet meer of minder sommen als je het met de hand zou moeten doen.
+- **Maar:** de computer kan deze berekeningen parallel uitvoeren.
+  - Elke berekening is onafhankelijk van elkaar: de berekening van een element hangt niet af van die van een ander element.
+
+---
+
+# Voorbeeld - XOR
+
+
+<v-switch>
+
+<template #0>
+<img src="./xor1.svg" width="400px" />
+</template>
+
+<template #1>
+<img src="./xor2.svg" width="400px" />
+</template>
+
+<template #2>
+<img src="./xor3.svg" width="400px" />
+</template>
+
+</v-switch>
+
+
+---
+layout: image-right
+image: broadcast.jpg
+---
+
+# Activatie-functie
+
+Vaak willen we een functie op ieder neuron onafhankelijk toepassen. Met het perceptron is dit de Heaviside Step Function, later zullen we hier ook de smooth sigma functie $\sigma(x)$ voor gaan zien.
+
+$$\sigma\left(\ket v\right)$$
+
+*Wanneer een functie op een tensor wordt toegepast beschouwen we dat als een aanroep op elk element afzonderlijk. Het resultaat heeft dezelfde vorm als de input, maar elke waarde is door de functie aangepast.*
+
+**Ook deze bewerkingen kunnen doorgaans parallel worden uitgevoerd, omdat de berekeningen onafhankelijk van elkaar zijn. In `numpy` wordt dit zonder expliciete loop automatisch over een hele array uitgevoerd - een zogenaamde `broadcast`.**
 
 ---
 
 # Affine transformaties / Homogene Coordinaten
 
-tbv bias term
+
+De enige stap die we nog missen, is het optellen van de bias. In principe kunnen hier steeds een bias-vector bij optellen, met dezelfde dimensies als de laag, maar in de praktijk ziet dit er vaak net anders uit.
+
+- We voegen aan elke vector (die de waardes in een laag representeert) een dimensie toe, die altijd de waarde $1$ heeft.
+- Elke matrix moet nu een extra kolom krijgen, hier komen de bias-termen voor ieder neuron in te staan.
+- In de vermenigvuldiging worden al deze bias termen met $1$ vermenigvuldigt en opgeteld.
+
+$$\textbf M \ket x + \ket b = \textbf M^\prime \ket{x^\prime}$$
+$$\textbf M^\prime = \begin{bmatrix}b_1 & M^1_1 & \cdots & M^n_1 \\ \vdots & \ddots & \vdots & \vdots \\ b_m & M^1_m & \dots & M^n_m \end{bmatrix}\qquad\ket{x^\prime} = \begin{bmatrix}1 \\ x^1 \\ \vdots \\ x^n \end{bmatrix}$$
+
+Hoewel dit klink alsof dit meer werk is (er wordt steeds met $1$ vermenigvuldigt) kan dit in dezelfde paralelle stap plaatsvinden als de rest van de vermenigvuldiging, terwijl optellen van een bias vector een extra stap zou opleveren.
+
+---
+
+# XOR met affine
+
+<img src="./xor4.svg" width="400px" />
 
 ---
 layout: chaptertitle
@@ -1248,47 +1326,161 @@ layout: chaptertitle
 # [LA-5] Dimensionaliteits-reductie met PCA
 
 ---
+layout: image-right
+image: colours2.svg
+---
 
 # Dimensionaliteits-reductie
 
-- Wat willen we bereiken?
-- Terugblik colour space les 1
+- Ruwe data is vaak hoog-dimensionaal, maar redundant.
+  - Datapunten kunnen in twee of meer dimensies sterk correleren (hetzelfde uitdrukken, mogelijk op een ander schaal).
+  - Een dimensie kan soms benaderd worden als een lineaire combinatie van enkele andere.
+- In al deze gevallen is het fijn om de dimensionaliteit terug te brengen:
+  - Minder waardes per datapunt is minder berekeningen,
+  - modellen werken vaak beter als ze niet hoeven te "ontdekken" dat informatie redundant aanwezig is.
 
+*In het voorbeeld uit les 1 lagen allen punten bijvoorbeeld ruwweg in een 2D vlak in de 3D ruimte.*
+
+---
+layout: image-right
+image: coord.jpg
 ---
 
 # Coordinaatstelsels en basis-vectoren
 
----
-
-# Covariantie-matrix
-
----
-
-# Eigenvectoren
+- Onze data wordt aangeleverd in een standaardbasis (orthonormaal, met basisvectoren die haaks op elkaar staan en allemaal dezelfde schaal hebben).
+- De datapunten zelf zijn niet afhankelijk van basis, alleen de manier waarop we ze in getallen uitdrukken (de coordinaten).
+- We kunnen een andere basis zoeken, die fijner werkt voor onze specifieke data.
 
 ---
-
-# Eigenbasis
-
+layout: image-left
+image: rotation.jpg
 ---
 
-# Symmetrische Matrices
+# Principle Component Analysis
 
-- Geometrische vorm
-- Eigenstuff orthonormaal
-- Quadratic forms?
-
----
-
-# Lagrange
+- **Idee:** we roteren de datapunten (of eigenlijk, de camera), zodat de dataspreiding zoveel mogelijk op een klein aantal assen ligt.
+- Als we kunnen achterhalen welke assen het meest interessant zijn, kunnen we een subset van deze assen bewaren:
+  - We kunnen een vast aantal assen kiezen, om bijvoorbeeld zo getrouw mogelijk naar 2D te projecteren en een plot te maken.
+- Het is (eenvoudig) uit te drukken hoeveel "informatie" (variantie) verloren gaat als we assen weggooien.
+  - Hiermee kunnen we de assen zo kiezen, dat we met zo min mogelijk dimensies een gewenste hoeveelheid variantie behouden.
 
 ---
-
-# Principal Component Analysis
+layout: image
+image: pca.gif
+class: pca
+---
 
 ---
 
-# Factor Analysis
+# Stap 0: Data-preparatie
+
+Om PCA succesvol uit te voeren, is het belangrijk dat de data genormaliseerd en gecentreerd is. We gaan uit van een data-matrix $\mathbf M$, waarbij iedere kolom een datapunt representeert, met per rij een feature / dimensie.
+
+### Centreren
+PCA voert een rotatie uit om de oorsprong; om dit te versimpelen willen we de data op de oorsprong gecentreerd hebben. Dit doen we door het gemiddelde per feature te berekenen, en dat van alle datapunten (kolommen) af te trekken. Dit levert een matrix op waarbij de som van elke rij $0$ is.
+
+### Normalisatie
+Met normaliseren bedoelen we dat er geen schaalverschillen zijn tussen vesrchillende features / dimensies. Dit doen we door de standaard-deviatie per feature te berekenen, en de gecentreede matrix hier door te delen. Het resultaat is een matrix waarbij de standaard-deviatie per feature gelijk is, namelijk 1.
+
+<hsp />
+
+$$\mathbf M^\prime = \frac{\mathbf M - \mu}{\sigma}$$
+
+---
+
+# Stap 1: Covariantie-matrix
+
+- We willen voor elke dimensie de variantie $\sigma^2$ (gemiddelde gekwadrateerde afwijking van het gemiddelde; S1) weten.
+  - Een dimensie met hoge variantie is interessant - de punten zijn op deze as minder hetzelfde, en geven meer informatie.
+- Ook hebben we de covariantie $\text{cov}(x, y)$ nodig: hoeveel beweegt $x$ mee met $y$.
+  - Covariantie is symmetrisch $\text{cov}(x, y) = \text{cov}(y, x)$.
+  - De variantie is een speciaal geval van de covariantie, namelijk de covariantie met zichzelf.
+
+Als we al deze waardes hebben willen we hier een matrix van maken:
+$$\begin{bmatrix}
+\textcolor{#cccccc}{\text{var}(x,x)} & \textcolor{#00aaff}{\text{cov}(x,y)} & \textcolor{#ff00aa}{\text{cov}(x,z)} \\
+\textcolor{#00aaff}{\text{cov}(y,x)} & \textcolor{#999999}{\text{var}(y,y)} & \textcolor{#aaff00}{\text{cov}(y,z)} \\
+\textcolor{#ff00aa}{\text{cov}(z,x)} & \textcolor{#aaff00}{\text{cov}(z,y)} & \textcolor{#666666}{\text{var}(z,z)} \\
+\end{bmatrix}$$
+
+Deze matrix is vierkant en symmetrisch: alle waardes met dezelfde kleur zijn hetzelfde.
+
+---
+
+# Eigenvectoren en Eigenwaardes
+
+Lineaire transformaties verplaatsen een input vector naar een nieuwe vector.
+- Meestal komt die vector heel ergens anders uit, maar voor
+- sommige vectoren kan het zo zijn dat deze op dezelfde lijn blijven:
+    - ze zijn geschaald maar verder niet veranderd.
+
+**Een vector die door een matrix $\mathbf M$ alleen geschaald wordt, is een Eigenvector van $\mathbf M$.**
+
+*Niet elke matrix heeft eigenvectoren; een pure rotatie of een niet-vierkante matrix heeft deze bijvoorbeeld niet.*
+
+  - Voor de identiteitsmatrix $\mathbf I$, en veelvouden daarvan, is elke vector een eigenvector.
+  - Voor alle andere  matrices in $n$ dimensies zijn er maximaal $n$ eigenvectoren.
+      - In zekere zin heeft een matrix (als deze eigenvectoren heeft) er oneindig veel, omdat elk veelvoud van een eigenvector zelf ook een eigenvector is: deze ligt op dezelfde lijn en blijft daar ook.
+      - We beschouwen daarom alle vectoren op dezelfde lijn als dezelfde eigenvector. Meestal kiezen we een vector met lengte $1$ om de eigenvector uit te drukken.
+
+<hsp />
+
+**Bij elke eigenvector hoort een eigenwaarde: de factor waarmee deze vectoren door de matrix geschaald worden.**
+
+---
+layout: iframe
+url: lin_trans.html
+---
+
+---
+
+# Stap 2: Eigenvectoren van de covariantie-matrix
+
+Voor PCA willen we de eigenvectoren en eigenwaarde hebben van de covariantie-matrix. We gaan deze niet zelf berekenen (dit is, afhankelijk van het aantal dimensies, een flinke klus en kan Numpy veel efficienter).
+
+Omdat de covariantie-matrix symmetrisch is, zal deze altijd $n$ eigenwaarde/eigenvector paren hebben, en zullen deze eigenvectoren allemaal haaks op elkaar staan. In essentie is dit dus een nieuwe basis, gedraaid ten opzichte van deze standaard basis. Wanneer we onze vectoren in deze nieuw basis beschouwen, willen we deze ranken zodat:
+- De eerste as zo goed als mogelijk overeen komt met de variantie in de data.
+- De tweede as zo goed als mogelijk overeen komt met de variantie die nog over is (niet door as gevat wordt).
+- De $n$-de as steeds zo goed als mogelijk overeen komt met de nog resterende variantie.
+
+Deze ranking kunnen we bereiken door voor de eerste as de eigenvector te nemen, die hoort bij de grootste eigenwaarde. Voor de tweede as, nemen we de tweede grootste eigenwaarde, etc.
+
+---
+
+# Stap 3: Tweaken
+
+We hebben nu een assenstelsel waarbij elke as te sorteren is, op hoe belangrijk deze is om de data uit te drukken:
+- Als we de minst belangrijke as weggooien, verliezen we zo min mogelijk informatie.
+- Dit kunnen we herhalen tot we nog een gegeven aantal assen overhouden.
+  - Bijvoorbeeld: 2 of 3 dimensies om een visualisatie te maken.
+
+De eigenwaardes drukken uit hoeveel variantie door elke eigenvector gevat wordt. Dit kunnen we gebruiken om een percentage te berekenen van de variantie die we nog hebben, nadat we een aantal assen hebben weggegooid:
+- De som van alle eigenwaardes geeft de totale variantie in de dataset weer.
+- De som van de eigenwaardes die horen bij de overgebleven assen, geeft de variantie weer die met louter deze assen wordt uitgedrukt.
+- Door deze door elkaar te delen krijgen we een waarde tussen $0$ (alle assen weg) en $1$ (alle assen behouden), die we als percentage kunnen uitdrukken.
+
+**Vaak passen we PCA toe door net zo lang niet-interessante assen weg te gooien, totdat we een bepaald percentage overschrijden. Zo comprimeren we de data zoveel mogelijk met een gewenst variantie-behoud.**
+
+---
+layout: chaptertitle
+---
+
+# Portfolio-item
+## [LA-II] Dimensionaliteit
+
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+
+*Met deze informatie kunnen we aan de slag met het eerste deel van het portfolio-item.*
 
 ---
 layout: chaptertitle
