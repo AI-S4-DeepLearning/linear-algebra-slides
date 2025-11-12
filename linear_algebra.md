@@ -1261,26 +1261,25 @@ De voordelen van deze representatie zitten met name in de weergave en het uitvoe
   - Elke berekening is onafhankelijk van elkaar: de berekening van een element hangt niet af van die van een ander element.
 
 ---
+layout: image
+image: xor1.svg
+---
 
 # Voorbeeld - XOR
 
+---
+layout: image
+image: xor2.svg
+---
 
-<v-switch>
+# Voorbeeld - XOR
 
-<template #0>
-<img src="xor1.svg" width="400px" />
-</template>
+---
+layout: image
+image: xor3.svg
+---
 
-<template #1>
-<img src="xor2.svg" width="400px" />
-</template>
-
-<template #2>
-<img src="xor3.svg" width="400px" />
-</template>
-
-</v-switch>
-
+# Voorbeeld - XOR
 
 ---
 layout: image-right
@@ -1314,10 +1313,13 @@ $$\textbf M^\prime = \begin{bmatrix}b_1 & M^1_1 & \cdots & M^n_1 \\ \vdots & \dd
 Hoewel dit klink alsof dit meer werk is (er wordt steeds met $1$ vermenigvuldigt) kan dit in dezelfde paralelle stap plaatsvinden als de rest van de vermenigvuldiging, terwijl optellen van een bias vector een extra stap zou opleveren.
 
 ---
+layout: image
+image: xor4.svg
+---
+
 
 # XOR met affine
 
-<img src="xor4.svg" width="400px" />
 
 ---
 layout: chaptertitle
