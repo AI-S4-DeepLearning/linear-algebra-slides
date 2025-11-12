@@ -1268,15 +1268,15 @@ De voordelen van deze representatie zitten met name in de weergave en het uitvoe
 <v-switch>
 
 <template #0>
-<img src="./xor1.svg" width="400px" />
+<img src="xor1.svg" width="400px" />
 </template>
 
 <template #1>
-<img src="./xor2.svg" width="400px" />
+<img src="xor2.svg" width="400px" />
 </template>
 
 <template #2>
-<img src="./xor3.svg" width="400px" />
+<img src="xor3.svg" width="400px" />
 </template>
 
 </v-switch>
@@ -1317,7 +1317,7 @@ Hoewel dit klink alsof dit meer werk is (er wordt steeds met $1$ vermenigvuldigt
 
 # XOR met affine
 
-<img src="./xor4.svg" width="400px" />
+<img src="xor4.svg" width="400px" />
 
 ---
 layout: chaptertitle
