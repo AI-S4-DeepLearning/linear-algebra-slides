@@ -1374,6 +1374,11 @@ class: pca
 ---
 
 ---
+layout: iframe
+url: pca.html
+---
+
+---
 
 # Stap 0: Data-preparatie
 
