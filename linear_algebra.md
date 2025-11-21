@@ -1496,46 +1496,158 @@ layout: chaptertitle
 # [LA-6] Data-embedding
 
 ---
+layout: image-right
+image: pca-tsne.png
+---
 
 # Nadelen PCA
 
+- PCA is a Lineaire Techniek:
+  - PCA vindt lineaire verbanden tussen variabelen, maar vaak zijn er ook relevante niet-lineaire verbanden.
+
+- PCA kijkt naar globale variantie, maar is zich niet bewust van small-scale structuren, zoals clusters of vormen.
+
+- Met PCA wordt de data samengevat, maar verdwijnen details. Als je enkel op PCA vertrouwt ben je je mogelijk niet bewust van wat er verloren is gegaan.
+
+**Rechts de PCA en t-SNE van een 15 dimensionale bal met een enkele streep.**
+
+---
+layout: image
+image: tsne-1.svg
+---
+
+# Voorbeeld
+## 2D $\to$ 1D
+
+---
+layout: image-left
+image: tube.jpg
+backgroundSize: 120em 200%
 ---
 
 # T-SNE
 
-- Wat doet het?
+**Input:** Een hoog-dimensionale dataset (honderden tot duizenden dimensies).
 
+**Output:** Een laag dimesionale "kaart" van de data (doorgaans 2D or 3D).
+
+**Uitgangspunt:** Lokale structuur blijft behouden: punten die bij elkaar in de buurt liggen, blijven bij elkaar in de buurt op de kaart. Afstanden en hoeken worden niet behouden.
+
+---
+layout: image-right
+image: tsne-2.svg
 ---
 
 # T-SNE
 
-High leven overview stappen
+- Meet (eenmalig) hoog-dimensionale (HD) gelijkenissen. Voor elk datapunt wordt de gelijkenis met elk ander punt bepaald.
+
+- Maak een eerste laag-dimensionale projectie.
+  - *Startsituatie: willekeurig.*
+
+- Meet de laag-dimensionale (LD) gelijkenissen.
+
+- Verplaats de punten in LD projectie om dit zoveel mogelijk overeen te laten komen:
+  - Elk punt in LD beweegt richting punten die in HD dichtbij zijn.
+  - Elk punt in LD beweegt weg van punten die in HD ver weg zijn.
+
+- Herhaal dit totdat punten in LD niet meer of onvoldoende verplaatsen.
 
 ---
-
-# Gelijkenissen in hogere dimensies
-
+layout: image-right
+image: tsne-3.svg
 ---
 
-# Gelijkenissen in lagere dimensies
+# Gelijkenissen in HD
+
+
+- Afstand tussen twee punten op een normaal-verdeling:
+  - Om een punt $x$ met alle punten te vergelijken
+    - Plaats in een loop steeds een ander punt op de verdeling, similarity is hoogte 
+- Normalisatie
+  - Clusters kunnen vari&euml;ren qua interne afstanden.
+  - Wat voor ons belangrijk is, is interne afstand t.o.v. afstand tot andere clusters.
+  - Met normalisatie kunnen we dit negeren.
+- Resultaat: matrix van gelijkheid-scores
+  - Diagonaal gevuld met nullen (similarity met zichzelf helpt niet in clusteren).
+  - Matrix is symmetrisch (afstand $A\to B$ is hetzelfde als $B\to A$).
+
 
 ---
-
-# Student's T-distribution
-
+layout: image-right
+image: tsne-4.svg
 ---
 
-# Verplaatsen van datapunten
+# Gelijkenissen in LD
+
+- Afstand tussen punten in LD nu op een andere verdeling: **Student-T verdeling**.
+
+- Merk op: lange uitlopers t.o.v. normaalverdeling
+  - In LD meer "crowding": er is minder ruimte voor dezelfde hoeveelheid punten.
+  - Met normaal-verdeling zouden clusters teveel naar het midden worden getrokken.
+  - Met T-distributie mogen punten ook verder uit elkaar liggen zonder hoge cost.
+- Matrix met similarities wordt steeds opnieuw berekend.
 
 ---
-
-# Voorbeelden data
-
-- Eerste intro images / word embeddings?
-
+layout: image-left
+image: mnist.jpg
 ---
 
-# Portfolio-item LA-II
+# Embedding: Afbeeldingen
+
+**Met PCA en t-SNE hebben we nu twee (verschillende) manieren om data te embedden.**
+
+- Een plaatje is te beschouwen als een vector van pixel-waardes (bijvoorbeeld MNIST: 28 $\times$ 28 pixels $\to$ 784 dimensies).
+- Door dimensionaliteit te reduceren onstaan "features", zoals terugkerende elementen.
+- t-SNE kan afbeeldingen clusteren die op elkaar lijken, en zonder de juiste antwoorden losse cijfers ontdekken.
+
+---
+layout: image-left
+image: dict.jpg
+---
+
+# Embedding: Taal
+
+**Met PCA en t-SNE hebben we nu twee (verschillende) manieren om data te embedden.**
+
+- Een woord kan tot een vector gemaakt worden door te tellen hoe vaak het bij andere woorden in de buurt voorkomt. Dit levert heel hoog dimensionele vectoren op, met veel $0$ waardes.
+- Door dimensionaliteit te reduceren worden "features" ontdekt, zoals in hoeverre een woord "dierlijk" is, of een "voertuig".
+- t-SNE kan deze clusters herkennen, zonder de woorden zelf te begrijpen.
+
+---
+layout: image-left
+image: genes.jpg
+---
+
+
+# Embedding: Misc
+
+**Met PCA en t-SNE hebben we nu twee (verschillende) manieren om data te embedden.**
+
+- Grafen (S2: Dijkstra) zijn als matrices te representeren, en van daaruit te vectoriseren.
+  - Dit werkt bijvoorbeeld voor stratenkaarten of sociale netwerken.
+- Genetische of moleculaire data kan gevectoriseerd worden op basis van aanwezige elementen of aminozuren.
+  - Door dimensioliteit te reduceren onstaan "features" die op ziektes of fenotypische eigenschappen wijzen.
+
+---
+layout: chaptertitle
+---
+
+# Portfolio-item
+## [LA-II] Dimensionaliteit
+
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+
+*Met deze informatie kunnen we aan de slag met het tweede deel van het portfolio-item.*
 
 ---
 layout: chaptertitle
