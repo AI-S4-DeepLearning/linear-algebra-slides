@@ -37,29 +37,15 @@ layout: cover
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
 
-
----
-layout: image-right
-image: recap.jpg
----
-
-# Recap
-
-<br>
-
-# Agenda
-
----
-layout: image
-image: wooclap.png
----
-
 ---
 layout: chaptertitle
 ---
 
 # [LA-1] Data en Dimensionaliteit
 
+---
+layout: image-right
+image: s3.png
 ---
 
 # Recap Data
@@ -81,7 +67,7 @@ layout: chaptertitle
 - `["Texel 27", 19_000]`
 - `["Ina Boudier-Bakkerlaan 14-B", 239_000]`
 
-Data is 1-dimensionaal
+De data is 1-dimensionaal
 - 1 getal is voldoende om alle (beschikbare) informatie weer te geven.
 - Eenvoudig op een getallenlijn te plaatsen
 
@@ -149,6 +135,14 @@ In dit geval lijkt 2D bijna "voldoende"
 <img src="/colours3.svg" style="margin: auto; height: 18vh" />
 
 Wiskundige technieken om te bepalen hoe we hoger-dimensionele data in minder dimensies kunnnen weergeven (met verlies).
+
+---
+layout: chaptertitle
+---
+
+## Oefening
+
+Dimensionaliteit
 
 ---
 layout: image-left
@@ -271,12 +265,9 @@ $$1 \ket v = \ket v$$
 Het maakt niet uit in welke volgorde we scalair product en "normaal product" uitvoeren
 $$a \cdot \big(b \cdot \ket v\big) = \big(a \cdot b\big) \cdot \ket v$$
 
-
-TODO plaatje
-
 ---
 layout: image-right
-image: vec_dist.svg
+image: vec_dist2.svg
 ---
 
 # Distributiviteit
@@ -290,7 +281,13 @@ $$a \cdot \big(\ket u + \ket v\big) = a \cdot \ket u + a \cdot \ket v$$
 Schalen met een som is hetzelfde als de som van geschaalde vectoren
 $$(a + b) \cdot \ket v = a \cdot \ket v + b \cdot \ket v$$
 
-TODO plaatje
+---
+layout: chaptertitle
+---
+
+## Oefening
+
+Vectorbewerkingen
 
 ---
 
@@ -321,17 +318,18 @@ layout: chaptertitle
 
 ---
 layout: image-right
+image: lin-comb.svg
 ---
 
 # Lineaire combinaties
 
 Door vectoren te schalen en op te tellen, kunnen we bestaande vectoren combineren:
 
-$$\ket v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \ket u = \begin{bmatrix}3 \\ -1 \end{bmatrix}$$
+$$\ket v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \ket u = \begin{bmatrix}3 \\ -2 \end{bmatrix}$$
 
 <hsp />
 
-$$2 \ket v + 3 \ket u = 2 \begin{bmatrix}1 \\ 2 \end{bmatrix} + 3 \begin{bmatrix}3 \\ -1 \end{bmatrix} = \begin{bmatrix}2 \\ 4 \end{bmatrix} + \begin{bmatrix}9 \\ -3 \end{bmatrix} = \begin{bmatrix}12 \\ 1 \end{bmatrix}$$
+$$3 \ket v + 2 \ket u = 3 \begin{bmatrix}1 \\ 2 \end{bmatrix} + 2 \begin{bmatrix}3 \\ -2 \end{bmatrix} = \begin{bmatrix}3 \\ 6 \end{bmatrix} + \begin{bmatrix}6 \\ -4 \end{bmatrix} = \begin{bmatrix}9 \\ 2 \end{bmatrix}$$
 
 In dit geval kunnen we elke vector schrijven als een som van $\ket u$ en $\ket v$.
 
@@ -345,6 +343,7 @@ In dit geval kunnen we elke vector schrijven als een som van $\ket u$ en $\ket v
 
 ---
 layout: image-right
+image: lin-indep.svg
 ---
 
 # Lineaire Onafhankelijkheid
@@ -354,7 +353,11 @@ layout: image-right
   - Voorwaarde: de twee vectoren liggen niet op &eacute;&eacute;n lijn
   - Werkt voor alle combinaties van 2 vectoren die geen veelvoud van elkaar zijn
 
-> TODO Kom ik op elk punt (omgekeerd tov coordinaten)
+### Lineair Afhankelijk
+- Als we twee lineair afhankelijke vectoren pakken krijgen we het plaatje hiernaast.
+  - De paarse vector is niet meer uit te drukken als som van $\ket v$ env $\ket u$.
+  - $3 \ket v + 2 \ket u$ ligt op de lijn van $\ket v$ en $\ket u$:
+$$3 \ket v + 2 \ket u = 6 \ket v = 4 \ket u$$
 
 ---
 layout: image-left
@@ -399,8 +402,15 @@ image: ltf.gif
 
   $$\ket u = \begin{bmatrix}1 \\ 2 \\ 3\end{bmatrix} \qquad \ket v = \begin{bmatrix}3 \\ 2 \\ 1\end{bmatrix} \qquad \ket w = \begin{bmatrix}-2 \\ 0 \\ 2\end{bmatrix}$$
 
-- De set $\big\{ \ket u, \ket v, \ket w \big\}$ is niet lineair onafhankelijk, maar elke subset van twee vectoren is dit wel
-- We hebben een basis voor een 2D-ruimte, niet 3D
+- De set $\big\{ \ket u, \ket v, \ket w \big\}$ is niet lineair onafhankelijk, maar elke subset van twee vectoren is dit wel.
+- We hebben een basis voor een 2D-ruimte, niet 3D.
+
+---
+layout: chaptertitle
+---
+
+## Oefening
+Dimensionaliteit van bases
 
 ---
 
@@ -466,6 +476,13 @@ $$a^2 + b^2 = c^2$$
 
 
 ---
+layout: chaptertitle
+---
+
+## Oefening
+Inwendig product en norm
+
+---
 layout: image-right
 image: cos.gif
 ---
@@ -487,6 +504,14 @@ Dit geeft de cosine similarity --- een getal dat uitdrukt hoe sterk twee vectore
 
 $$S_C (u,v):= \cos(\theta) = {\langle u \mid v \rangle \over \lvert u\rvert \ \lvert v\rvert}
 = \frac{ \langle u \mid v \rangle }{ \sqrt{\langle u \mid u \rangle} \sqrt{\langle v \mid v \rangle} }$$
+
+
+---
+layout: chaptertitle
+---
+
+## Oefening
+Cosine Similarity
 
 ---
 
@@ -675,6 +700,13 @@ $$\begin{align*}\mathbf M \mathbf N &=
 \end{align*}$$
 
 ---
+layout: chaptertitle
+---
+
+## Oefening
+Matrix-vermenigvuldigingen
+
+---
 
 # Matrices als getallen
 
@@ -807,6 +839,14 @@ $$\begin{bmatrix}
 \begin{align*} 3 \cdot -10 + 2 \cdot 6 + 4 \cdot 11 = 26 \\ 1 \cdot -10 + 2 \cdot 6 + 1 \cdot 11 = 13 \\ 3 \cdot -10 + 5 \cdot 6 + 0 \cdot 11 = 0 \end{align*}$$
 
 ---
+layout: chaptertitle
+---
+
+## Oefening
+
+Gauss-Jordan
+
+---
 
 # Over- en ondergedetermineerde systemen
 
@@ -844,6 +884,14 @@ Om te bepalen hoeveel oplossingen er zijn kunnen we de determinant van de matrix
 Voor $\mathbf{M} = \begin{bmatrix} a & b \\ c & d\end{bmatrix}$ is de determinant te berekenen met $\det(\mathbf M) = ad - bc$
 
 Voor $\mathbf{M} = \begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmatrix}$ is de determinant $\det(\mathbf M) = aei + bfg + cdh - gec - hfa - idb$
+
+---
+layout: chaptertitle
+---
+
+## Oefening
+
+Determinanten
 
 ---
 
@@ -884,10 +932,12 @@ Bij transpositie worden de elementen in een matrix of vector gespiegeld:
 - Een matrix wordt gespiegeld over de diagonaal (plaatje!)
 
 ---
+layout: chaptertitle
+---
 
-# Oefening
+## Oefening
 
-TODO aantal berekeningen
+Transposities
 
 ---
 layout: image-right
@@ -992,6 +1042,91 @@ $$\epsilon^i e_j = \begin{cases} 1 \text{ if }  i = j \\ 0 \text{ if } i\ne j \e
 
 ::right::
 
+<v-switch>
+
+
+<template #0>
+
+$$\begin{align*}\mathbf M \ket v &= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot \left({\color{#ff33ff}7}{\color{grey}e_1} + {\color{#ff9900}6}{\color{grey}e_2}\right) \\[2mm]
+\end{align*}
+\hspace{1cm}\;
+$$
+
+</template>
+
+<template #1>
+
+$$\begin{align*}\mathbf M \ket v &= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot \left({\color{#ff33ff}7}{\color{grey}e_1} + {\color{#ff9900}6}{\color{grey}e_2}\right) \\[2mm]
+&= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff33ff}7}\color{grey}e_1 \\
+&+ \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff9900}6}\color{grey}e_2 \\[2mm]
+\end{align*}
+\hspace{1cm}\;
+$$
+
+</template>
+
+<template #2>
+
+$$\begin{align*}\mathbf M \ket v &= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot \left({\color{#ff33ff}7}{\color{grey}e_1} + {\color{#ff9900}6}{\color{grey}e_2}\right) \\[2mm]
+&= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff33ff}7}\color{grey}e_1 \\
+&+ \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff9900}6}\color{grey}e_2 \\[2mm]
+&= {\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} \cdot {\color{#ff33ff}7}{\color{grey}e_1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} \cdot {\color{#ff33ff}7}{\color{grey}e_1} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} \cdot {\color{#ff33ff}7}{\color{grey}e_1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2} \cdot {\color{#ff33ff}7}{\color{grey}e_1} \\
+&+ {\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} \cdot {\color{#ff9900}6}{\color{grey}e_2} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} \cdot {\color{#ff9900}6}{\color{grey}e_2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} \cdot {\color{#ff9900}6}{\color{grey}e_2} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2} \cdot {\color{#ff9900}6}{\color{grey}e_2}\\[2mm]
+\end{align*}
+\hspace{1cm}\;
+$$
+
+</template>
+<template #3>
+
+$$\begin{align*}\mathbf M \ket v &= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot \left({\color{#ff33ff}7}{\color{grey}e_1} + {\color{#ff9900}6}{\color{grey}e_2}\right) \\[2mm]
+&= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff33ff}7}\color{grey}e_1 \\
+&+ \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff9900}6}\color{grey}e_2 \\[2mm]
+&= {\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} \cdot {\color{#ff33ff}7}{\color{grey}e_1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} \cdot {\color{#ff33ff}7}{\color{grey}e_1} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} \cdot {\color{#ff33ff}7}{\color{grey}e_1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2} \cdot {\color{#ff33ff}7}{\color{grey}e_1} \\
+&+ {\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} \cdot {\color{#ff9900}6}{\color{grey}e_2} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} \cdot {\color{#ff9900}6}{\color{grey}e_2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} \cdot {\color{#ff9900}6}{\color{grey}e_2} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2} \cdot {\color{#ff9900}6}{\color{grey}e_2}\\[2mm]
+&= {\color{#ff00aa}1}\cdot {\color{#ff33ff}7} {\color{darkgrey}e_1\otimes\epsilon^1e_1} + {\color{#66ffaa}0}\cdot {\color{#ff33ff}7} {\color{#333333}e_1\otimes\epsilon^2e_1} + {\color{#00aaff}2}\cdot {\color{#ff33ff}7} {\color{darkgrey}e_2\otimes\epsilon^1e_1} {\color{#ffff99}\ -\ 1}\cdot {\color{#ff33ff}7} {\color{#333333}e_2\otimes\epsilon^2e_1} \\
+&+ {\color{#ff00aa}1}\cdot {\color{#ff9900}6} {\color{#333333}e_1\otimes\epsilon^1e_2} + {\color{#66ffaa}0}\cdot {\color{#ff9900}6} {\color{darkgrey}e_1\otimes\epsilon^2e_2} + {\color{#00aaff}2}\cdot {\color{#ff9900}6} {\color{#333333}e_2\otimes\epsilon^1e_2} {\color{#ffff99}\ -\ 1}\cdot {\color{#ff9900}6} {\color{darkgrey}e_2\otimes\epsilon^2e_2}\\[2mm]
+\end{align*}
+\hspace{1cm}\;
+$$
+
+</template>
+
+<template #4>
+
+$$\begin{align*}\mathbf M \ket v &= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot \left({\color{#ff33ff}7}{\color{grey}e_1} + {\color{#ff9900}6}{\color{grey}e_2}\right) \\[2mm]
+&= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff33ff}7}\color{grey}e_1 \\
+&+ \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff9900}6}\color{grey}e_2 \\[2mm]
+&= {\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} \cdot {\color{#ff33ff}7}{\color{grey}e_1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} \cdot {\color{#ff33ff}7}{\color{grey}e_1} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} \cdot {\color{#ff33ff}7}{\color{grey}e_1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2} \cdot {\color{#ff33ff}7}{\color{grey}e_1} \\
+&+ {\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} \cdot {\color{#ff9900}6}{\color{grey}e_2} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} \cdot {\color{#ff9900}6}{\color{grey}e_2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} \cdot {\color{#ff9900}6}{\color{grey}e_2} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2} \cdot {\color{#ff9900}6}{\color{grey}e_2}\\[2mm]
+&= {\color{#ff00aa}1}\cdot {\color{#ff33ff}7} {\color{darkgrey}e_1\otimes\epsilon^1e_1} + {\color{#66ffaa}0}\cdot {\color{#ff33ff}7} {\color{#333333}e_1\otimes\epsilon^2e_1} + {\color{#00aaff}2}\cdot {\color{#ff33ff}7} {\color{darkgrey}e_2\otimes\epsilon^1e_1} {\color{#ffff99}\ -\ 1}\cdot {\color{#ff33ff}7} {\color{#333333}e_2\otimes\epsilon^2e_1} \\
+&+ {\color{#ff00aa}1}\cdot {\color{#ff9900}6} {\color{#333333}e_1\otimes\epsilon^1e_2} + {\color{#66ffaa}0}\cdot {\color{#ff9900}6} {\color{darkgrey}e_1\otimes\epsilon^2e_2} + {\color{#00aaff}2}\cdot {\color{#ff9900}6} {\color{#333333}e_2\otimes\epsilon^1e_2} {\color{#ffff99}\ -\ 1}\cdot {\color{#ff9900}6} {\color{darkgrey}e_2\otimes\epsilon^2e_2}\\[2mm]
+&= {\color{#ff00aa}1}\cdot {\color{#ff33ff}7} {\color{grey}e_1} + {\color{#00aaff}2}\cdot {\color{#ff33ff}7} {\color{grey}e_2} + {\color{#66ffaa}0}\cdot {\color{#ff9900}6} {\color{grey}e_1} {\color{#ffff99}\ -\ 1}\cdot {\color{#ff9900}6} {\color{grey}e_2}\\[2mm]
+\end{align*}
+\hspace{1cm}\;
+$$
+
+</template>
+
+<template #5>
+
+$$\begin{align*}\mathbf M \ket v &= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot \left({\color{#ff33ff}7}{\color{grey}e_1} + {\color{#ff9900}6}{\color{grey}e_2}\right) \\[2mm]
+&= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff33ff}7}\color{grey}e_1 \\
+&+ \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff9900}6}\color{grey}e_2 \\[2mm]
+&= {\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} \cdot {\color{#ff33ff}7}{\color{grey}e_1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} \cdot {\color{#ff33ff}7}{\color{grey}e_1} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} \cdot {\color{#ff33ff}7}{\color{grey}e_1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2} \cdot {\color{#ff33ff}7}{\color{grey}e_1} \\
+&+ {\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} \cdot {\color{#ff9900}6}{\color{grey}e_2} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} \cdot {\color{#ff9900}6}{\color{grey}e_2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} \cdot {\color{#ff9900}6}{\color{grey}e_2} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2} \cdot {\color{#ff9900}6}{\color{grey}e_2}\\[2mm]
+&= {\color{#ff00aa}1}\cdot {\color{#ff33ff}7} {\color{darkgrey}e_1\otimes\epsilon^1e_1} + {\color{#66ffaa}0}\cdot {\color{#ff33ff}7} {\color{#333333}e_1\otimes\epsilon^2e_1} + {\color{#00aaff}2}\cdot {\color{#ff33ff}7} {\color{darkgrey}e_2\otimes\epsilon^1e_1} {\color{#ffff99}\ -\ 1}\cdot {\color{#ff33ff}7} {\color{#333333}e_2\otimes\epsilon^2e_1} \\
+&+ {\color{#ff00aa}1}\cdot {\color{#ff9900}6} {\color{#333333}e_1\otimes\epsilon^1e_2} + {\color{#66ffaa}0}\cdot {\color{#ff9900}6} {\color{darkgrey}e_1\otimes\epsilon^2e_2} + {\color{#00aaff}2}\cdot {\color{#ff9900}6} {\color{#333333}e_2\otimes\epsilon^1e_2} {\color{#ffff99}\ -\ 1}\cdot {\color{#ff9900}6} {\color{darkgrey}e_2\otimes\epsilon^2e_2}\\[2mm]
+&= {\color{#ff00aa}1}\cdot {\color{#ff33ff}7} {\color{grey}e_1} + {\color{#00aaff}2}\cdot {\color{#ff33ff}7} {\color{grey}e_2} + {\color{#66ffaa}0}\cdot {\color{#ff9900}6} {\color{grey}e_1} {\color{#ffff99}\ -\ 1}\cdot {\color{#ff9900}6} {\color{grey}e_2}\\[2mm]
+&= ({\color{#ff00aa}1}\cdot {\color{#ff33ff}7} + {\color{#ff9900}6} \cdot {\color{#66ffaa}0}) {\color{grey}e_1} + ({\color{#00aaff}2}\cdot {\color{#ff33ff}7} {\color{#ffff99}\ -\ 1}\cdot {\color{#ff9900}6}) {\color{grey}e_2}\\[2mm]
+\end{align*}
+\hspace{1cm}\;
+$$
+
+</template>
+
+<template #6>
+
 $$\begin{align*}\mathbf M \ket v &= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot \left({\color{#ff33ff}7}{\color{grey}e_1} + {\color{#ff9900}6}{\color{grey}e_2}\right) \\[2mm]
 &= \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff33ff}7}\color{grey}e_1 \\
 &+ \left({\color{#ff00aa}1}{\color{grey}e_1\otimes\epsilon^1} + {\color{#66ffaa}0}{\color{grey}e_1\otimes\epsilon^2} + {\color{#00aaff}2}{\color{grey}e_2\otimes\epsilon^1} {\color{#ffff99}\ -\ 1}{\color{grey}e_2\otimes\epsilon^2}\right) \cdot {\color{#ff9900}6}\color{grey}e_2 \\[2mm]
@@ -1002,11 +1137,17 @@ $$\begin{align*}\mathbf M \ket v &= \left({\color{#ff00aa}1}{\color{grey}e_1\oti
 &= {\color{#ff00aa}1}\cdot {\color{#ff33ff}7} {\color{grey}e_1} + {\color{#00aaff}2}\cdot {\color{#ff33ff}7} {\color{grey}e_2} + {\color{#66ffaa}0}\cdot {\color{#ff9900}6} {\color{grey}e_1} {\color{#ffff99}\ -\ 1}\cdot {\color{#ff9900}6} {\color{grey}e_2}\\[2mm]
 &= ({\color{#ff00aa}1}\cdot {\color{#ff33ff}7} + {\color{#ff9900}6} \cdot {\color{#66ffaa}0}) {\color{grey}e_1} + ({\color{#00aaff}2}\cdot {\color{#ff33ff}7} {\color{#ffff99}\ -\ 1}\cdot {\color{#ff9900}6}) {\color{grey}e_2}\\[2mm]
 &= 7 {\color{grey}e_1} + 8 {\color{grey}e_2}
-\end{align*}$$
+\end{align*}
+\hspace{1cm}\;
+$$
 
+</template>
+
+</v-switch>
 
 ---
 layout: two-cols-header
+disabled: true
 ---
 
 # Basis-notatie: Matrix-matrix
@@ -1048,10 +1189,12 @@ $$\begin{align*}\mathbf M \mathbf N &= \left({\color{#ff00aa}1}{\color{grey}e_1\
 ---
 layout: image
 image: wtf.jpg
+disabled: true
 ---
 
 ---
 layout: two-cols-header
+disabled: true
 ---
 
 # Basis-notatie: Matrix-matrix (redux)
@@ -1084,24 +1227,6 @@ $$\begin{align*}
 $$\epsilon^i e_j = \begin{cases} 1 \text{ if }  i = j \\ 0 \text{ if } i\ne j \end{cases}$$
 
 </div>
-
----
-
-# Sommatie en Einstein Notatie
-
-Als we de getallen in de vector / matrix indexeren, kunnen we het systematisch over individuele getallen hebben.
-
-- $v^3$ staat voor het derde element van $\ket v$ 
-$$\ket v = v^1{\color{grey}e_1} + v^2{\color{grey}e_2}$$
-- $M^1_2$ staat voor het eerste element van de tweede kolom van $\mathbf M$
-$$\mathbf M = M^1_1{\color{grey}e_1\otimes\epsilon^1} + M^1_2{\color{grey}e_1\otimes\epsilon^2} + M^2_1{\color{grey}e_2\otimes\epsilon^1} + M^2_2 {\color{grey}e_2\otimes\epsilon^2}$$
-*Merk op dat een hoge index in de elementen overeen komt met een lage in de basis-vector, en vice versa!*
-(FIXME: dit is conventie en klopt qua (co) variantie, maar is misschien simpeler om juist te matchen?)
-
-De berekeningen voor de elementen van $\ket w = \mathbf M \ket v$ en $\mathbf O = \mathbf{MN}$ zien er nu als volgt uit:
-$$w^i = \sum_{j = 1}^n M^i_j v^j = M^i_{\color{#00aaff}j} v^{\color{#00aaff}j}, \qquad O^i_k = \sum_{j = 1}^n M^i_j N^j_k = M^i_{\color{#00aaff}j} N^{\color{#00aaff}j}_k$$
-
-Vaak laten we de $\Sigma$ en sommatie index $j$ weg, omdat die eigenlijk al duidelijk is: het is de enige index die twee keer voor komt, boven en beneden.
 
 ---
 
@@ -1151,6 +1276,8 @@ $$\begin{align*}B(u,v) = \mathbf B \ket u \ket v &= \left(1\textcolor{grey}{\eps
 \end{align*}$$
 
 ---
+disabled: true
+---
 
 # Tensoren
 
@@ -1171,6 +1298,8 @@ $$\begin{align*}B(u,v) = \mathbf B \ket u \ket v &= \left(1\textcolor{grey}{\eps
 
 # Tensor / Kronecker Product
 
+- Vectoren, covectoren, matrices, bilineaire vormen lijken erg op elkaar.
+    - Het zijn verschijningsvormen van een algemeen concept: de **tensor**.
 - Hogere-orde tensoren worden gevormd op basis van coefficienten en basis-tensoren.
 - Soms willen we een hogere-orde tensor maken op basis van vectoren.
   - Dit kan met het Kronecker product, $\otimes$.
@@ -1184,27 +1313,6 @@ Hier maken we een matrix met behulp van een vector en een covector.
 Vaak kom je de notatie notatie $\ket u \bra v$ tegen voor de vector-covector naar matrix vermenigvuldiging. Ook zonder het $\otimes$ symbool is het Kronecker product hier impliciet.
 
 **Het symbool $\otimes$ wordt zowel voor het Kronecker product gebruikt (op lijsten en kolommen van getallen), als voor het tensor-product (dat wij vooral voor basis-vectoren gebruiken).**
-
-
----
-
-# Index-notatie
-
-Des te complexer tensoren worden, des te lastiger wordt het om deze te overzien.
-- Hebben we te maken met een rij van kolommen van rijen? Of een rij van rijen van kolommen?
-- Welke "assen" willen we verwisselen bij een transpositie?
-- Op welke manier wordt een vermenigvuldiging uitgevoerd?
-
-**In dit geval is het handiger om met index-notatie te werken, en de basis expliciet te benoemen.**
-
-###  Voorbeeld
-
-$T_{ij}^k\textcolor{grey}{e_k\otimes\epsilon^i\otimes\epsilon^j}$ staat voor *"[y] ziet [x]"*. We willen dit combineren met vectoren $m^a \textcolor{grey}{e_a}$ (*"man"*) en $h^b \textcolor{grey}{e_b}$ (*"hond"*).
-
-- Voor *"(De) man ziet (de) hond"* zetten we de index van *"hond"* gelijk aan de eerste index van *"zien"*, en die van *"man"* aan de tweede: 
-$$S = \mathbf T \ket h \ket m = T_{ij}^kh_im_j = T_{ij}^km_jh_i \mapsto S^k e_k$$
-- Voor *"(De) hond ziet (de) man"* zetten we de index van *"man"* gelijk aan de eerste index van *"zien"*, en die van *"hond"* aan de tweede: 
-$$S = \mathbf T \ket m \ket h = T_{ij}^km_ih_j = T_{ij}^kh_jm_i \mapsto S^k e_k$$
 
 ---
 layout: image-right
@@ -1224,8 +1332,24 @@ De meeste producten die we deze les gezien hebben, zitten in Numpy als `dot()` o
 **Volgende les gaan we toewerken naar toepassing in neurale netwerken, en gebruik van Numpy in deze context.**
 
 ---
+layout: chaptertitle
+---
 
-# Portfolio-item LA-I
+# Portfolio-item
+## [LA-I] Vectorbewerkingen
+
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+
+*Met deze informatie kunnen we aan de slag met het tweede deel van het portfolio-item.*
 
 ---
 layout: chaptertitle

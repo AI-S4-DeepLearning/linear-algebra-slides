@@ -23,14 +23,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
-     inkscape:zoom="3.7795691"
-     inkscape:cx="226.74543"
-     inkscape:cy="543.97736"
-     inkscape:window-width="1887"
-     inkscape:window-height="1171"
+     inkscape:zoom="1.8897846"
+     inkscape:cx="226.74542"
+     inkscape:cy="571.7583"
+     inkscape:window-width="1868"
+     inkscape:window-height="925"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="g83" />
   <defs
      id="defs1">
@@ -101,7 +101,15 @@
            y="-143.33513"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602553"
+           style="fill:#ffffff;fill-opacity:0.1;stroke:none;stroke-width:0.602553"
+           id="rect15"
+           width="105.53333"
+           height="10.236732"
+           x="-143.35844"
+           y="-31.261116"
+           transform="scale(-1)" />
+        <rect
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602553"
            id="rect2"
            width="105.53333"
            height="10.236732"
@@ -109,7 +117,7 @@
            y="-143.33513"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602553"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602553"
            id="rect3"
            width="105.53333"
            height="10.236732"
@@ -117,7 +125,7 @@
            y="-122.16846"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602553"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602553"
            id="rect4"
            width="105.53333"
            height="10.236732"
@@ -125,7 +133,7 @@
            y="-101.00179"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602553"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602553"
            id="rect5"
            width="105.53333"
            height="10.236732"
@@ -133,7 +141,7 @@
            y="-79.835136"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602553"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602553"
            id="rect6"
            width="105.53333"
            height="10.236732"
@@ -172,21 +180,13 @@
            x="-143.35844"
            y="-52.427765"
            transform="scale(-1)" />
-        <rect
-           style="fill:#ffffff;fill-opacity:0.1;stroke:none;stroke-width:0.602553"
-           id="rect15"
-           width="105.53333"
-           height="10.236732"
-           x="-143.35844"
-           y="-31.261116"
-           transform="scale(-1)" />
       </g>
       <path
-         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.300001;stroke-dasharray:none"
+         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.300001;stroke-dasharray:none;opacity:0.6"
          d="M 64.070388,73.688256 H 116.90757"
          id="path15" />
       <path
-         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.300001;stroke-dasharray:none"
+         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.300001;stroke-dasharray:none;opacity:0.6"
          d="M 90.503777,47.269663 90.35378,100.10684"
          id="path16" />
       <path
@@ -230,7 +230,15 @@
            y="-143.33513"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602578"
+           style="fill:#ffffff;fill-opacity:0.1;stroke:none;stroke-width:0.602578"
+           id="rect15-6"
+           width="105.53333"
+           height="10.236732"
+           x="-143.35844"
+           y="-31.261116"
+           transform="scale(-1)" />
+        <rect
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602578"
            id="rect2-2"
            width="105.53333"
            height="10.236732"
@@ -238,7 +246,7 @@
            y="-143.33513"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602578"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602578"
            id="rect3-7"
            width="105.53333"
            height="10.236732"
@@ -246,7 +254,7 @@
            y="-122.16846"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602578"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602578"
            id="rect4-0"
            width="105.53333"
            height="10.236732"
@@ -254,7 +262,7 @@
            y="-101.00179"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602578"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602578"
            id="rect5-9"
            width="105.53333"
            height="10.236732"
@@ -262,12 +270,12 @@
            y="-79.835136"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602578"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602578"
            id="rect6-3"
            width="105.53333"
            height="10.236732"
            x="21.001072"
-           y="-58.66848"
+           y="-58.668476"
            transform="rotate(90)" />
         <rect
            style="fill:#ffffff;fill-opacity:0.1;stroke:none;stroke-width:0.602578"
@@ -301,21 +309,13 @@
            x="-143.35844"
            y="-52.427765"
            transform="scale(-1)" />
-        <rect
-           style="fill:#ffffff;fill-opacity:0.1;stroke:none;stroke-width:0.602578"
-           id="rect15-6"
-           width="105.53333"
-           height="10.236732"
-           x="-143.35844"
-           y="-31.261116"
-           transform="scale(-1)" />
       </g>
       <path
-         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.283942;stroke-dasharray:none"
+         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.283942;stroke-dasharray:none;opacity:0.6"
          d="M 45.66342,132.69967 H 95.5335"
          id="path15-1" />
       <path
-         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.283942;stroke-dasharray:none"
+         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.283942;stroke-dasharray:none;opacity:0.6"
          d="M 70.59846,107.76463 V 157.6347"
          id="path16-8" />
       <text
@@ -497,7 +497,15 @@
            y="-143.33513"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602578"
+           style="fill:#ffffff;fill-opacity:0.1;stroke:none;stroke-width:0.602578"
+           id="rect63"
+           width="105.53333"
+           height="10.236732"
+           x="-143.35844"
+           y="-31.261116"
+           transform="scale(-1)" />
+        <rect
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602578"
            id="rect54"
            width="105.53333"
            height="10.236732"
@@ -505,7 +513,7 @@
            y="-143.33513"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602578"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602578"
            id="rect55"
            width="105.53333"
            height="10.236732"
@@ -513,7 +521,7 @@
            y="-122.16846"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602578"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602578"
            id="rect56"
            width="105.53333"
            height="10.236732"
@@ -521,7 +529,7 @@
            y="-101.00179"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602578"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602578"
            id="rect57"
            width="105.53333"
            height="10.236732"
@@ -529,7 +537,7 @@
            y="-79.835136"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.602578"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.602578"
            id="rect58"
            width="105.53333"
            height="10.236732"
@@ -568,17 +576,9 @@
            x="-143.35844"
            y="-52.427765"
            transform="scale(-1)" />
-        <rect
-           style="fill:#ffffff;fill-opacity:0.1;stroke:none;stroke-width:0.602578"
-           id="rect63"
-           width="105.53333"
-           height="10.236732"
-           x="-143.35844"
-           y="-31.261116"
-           transform="scale(-1)" />
       </g>
       <path
-         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.283942;stroke-dasharray:none"
+         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.283942;stroke-dasharray:none;opacity:0.6"
          d="M 70.59846,107.76463 V 157.6347"
          id="path64" />
       <g

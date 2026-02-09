@@ -27,7 +27,7 @@
      inkscape:cx="258.44752"
      inkscape:cy="306.53078"
      inkscape:window-width="1868"
-     inkscape:window-height="905"
+     inkscape:window-height="925"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -93,7 +93,15 @@
            y="-143.33513"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.3"
+           style="fill:#ffffff;fill-opacity:0.1;stroke:none;stroke-width:0.3"
+           id="rect15"
+           width="105.53333"
+           height="10.236732"
+           x="-143.35844"
+           y="-31.261116"
+           transform="scale(-1)" />
+        <rect
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.3"
            id="rect2"
            width="105.53333"
            height="10.236732"
@@ -101,7 +109,7 @@
            y="-143.33513"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.3"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.3"
            id="rect3"
            width="105.53333"
            height="10.236732"
@@ -109,7 +117,7 @@
            y="-122.16846"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.3"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.3"
            id="rect4"
            width="105.53333"
            height="10.236732"
@@ -117,7 +125,7 @@
            y="-101.00179"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.3"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.3"
            id="rect5"
            width="105.53333"
            height="10.236732"
@@ -125,7 +133,7 @@
            y="-79.835136"
            transform="rotate(90)" />
         <rect
-           style="fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.3"
+           style="fill:#ffffff;fill-opacity:0.05;stroke:none;stroke-width:0.3"
            id="rect6"
            width="105.53333"
            height="10.236732"
@@ -164,21 +172,13 @@
            x="-143.35844"
            y="-52.427765"
            transform="scale(-1)" />
-        <rect
-           style="fill:#ffffff;fill-opacity:0.1;stroke:none;stroke-width:0.3"
-           id="rect15"
-           width="105.53333"
-           height="10.236732"
-           x="-143.35844"
-           y="-31.261116"
-           transform="scale(-1)" />
       </g>
       <path
-         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
+         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none;opacity:0.6"
          d="M 37.651797,73.767738 H 143.48513"
          id="path15" />
       <path
-         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none"
+         style="fill:none;fill-opacity:0.1;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none;opacity:0.6"
          d="m 90.568462,20.85107 7e-6,105.83333"
          id="path16" />
       <path
