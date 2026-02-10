@@ -113,8 +113,8 @@ image: colours1.svg
 
 - Menselijk oog heeft drie typen lichtgevoelige kegels
   - Rood <span style="color: #f00">$\searrow$</span>
-  - Blauw <span style="color: #0f0">$\nearrow$</span>
-  - Groen <span style="color: #00f">$\uparrow$</span>
+  - Groen <span style="color: #0f0">$\nearrow$</span>
+  - Blauw <span style="color: #00f">$\uparrow$</span>
   - *(staafjes dragen nauwelijks bij aan kleurenvisie)*
   - *Kleurenblindheid $\to$ 2D-kleuren, of zelfs 1D*
 - **We plotten kleuren in een 3D *ruimte***
@@ -188,8 +188,8 @@ We kunnen 2 vectoren bij elkaar optellen:
   - Geometrisch (plaatje)
   - Numeriek
 
-$$\ket v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \ket u = \begin{bmatrix}3 \\ -1 \end{bmatrix}$$
-$$\ket z = \ket v + \ket u = \begin{bmatrix}1 \\ 2 \end{bmatrix} + \begin{bmatrix}3 \\ -1 \end{bmatrix} = \begin{bmatrix}3 + 1 \\ 1 + (-1) \end{bmatrix} = \begin{bmatrix}4 \\ 0 \end{bmatrix}$$
+$$\ket v = \begin{bmatrix}1 \\ 2 \end{bmatrix}\qquad \ket u = \begin{bmatrix}3 \\ -2 \end{bmatrix}$$
+$$\ket z = \ket v + \ket u = \begin{bmatrix}1 \\ 2 \end{bmatrix} + \begin{bmatrix}3 \\ -2 \end{bmatrix} = \begin{bmatrix}1 + 3 \\ 2 + (-2) \end{bmatrix} = \begin{bmatrix}4 \\ 0 \end{bmatrix}$$
 
 <hsp />
 
@@ -543,7 +543,7 @@ image: vec_proj.svg
 We kunnen de normale basisvectoren gebruiken om elementen uit een vector te halen:
 
 $$\ket{e_1} = \begin{bmatrix}1 \\ 0\end{bmatrix}\qquad \ket{e_2} = \begin{bmatrix}0 \\ 1\end{bmatrix}$$
-$$\ket v = \begin{bmatrix}3 \\ 4\end{bmatrix}\qquad \langle e_1 \mid u \rangle = 3\qquad \langle e_2 \mid u \rangle = 4$$
+$$\ket v = \begin{bmatrix}3 \\ 4\end{bmatrix}\qquad \langle e_1 \mid v \rangle = 3\qquad \langle e_2 \mid v \rangle = 4$$
 
 Dit is de projectie van de vector of de $x$- en $y$-as.
 
