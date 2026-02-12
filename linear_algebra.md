@@ -734,7 +734,7 @@ Net als bij vectoren kun je van een matrix de norm berekenen. Er zijn diverse no
 
 - De Frobenius norm is de wortel van het Frobenius (inner) product van de matrix met zichzelf. Hier worden alle elementen paarsgewijs met elkaar vermenigvuldigd, en worden de getallen bij elkaar opgeteld.
 
-$$\lVert \mathbf M \rVert_F = \sum_i^m \sum_j^n\;\lvert M_i^j \rvert^2$$
+$$\lVert \mathbf M \rVert_F = \sqrt{\sum_i^m \sum_j^n\;\lvert M_i^j \rvert^2}$$
 
   - Dit komt overeen met de vector norm die we gezien hebben, als we alle getallen in de matrix als &eacute;&eacute;n vector beschouwen.
 
