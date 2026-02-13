@@ -413,6 +413,30 @@ layout: chaptertitle
 Dimensionaliteit van bases
 
 ---
+disabled: true
+---
+
+## Dimensionaliteit van bases (oefening)
+
+Gegeven de vijf vectoren:
+
+$$
+  \begin{bmatrix}  1 \\  5 \\  2 \end{bmatrix} \qquad 
+  \begin{bmatrix}  3 \\  0 \\  8 \end{bmatrix} \qquad 
+  \begin{bmatrix}  5 \\ -5 \\ 14 \end{bmatrix} \qquad 
+  \begin{bmatrix}  1 \\ -3 \\  4 \end{bmatrix} \qquad 
+  \begin{bmatrix}  2 \\  2 \\  6 \end{bmatrix}
+$$
+
+Welke vectoren zijn lineair onafhankelijk?
+
+<!--
+Oplossing bijvoorbeeld:
+* $ \vec{v}_1 + \vec{v}_3 = 2\vec{v}_2 $
+* $ \vec{v}_1 + \vec{v}_4 =  \vec{v}_5 $
+ -->
+
+---
 
 # Inwendig product
 
@@ -454,6 +478,42 @@ $$\langle u \mid v \rangle = \begin{bmatrix}3 & -1\end{bmatrix} \begin{bmatrix}1
 **De uitkomst is steeds gelijk, het verschil tussen kolom en rij zit in hoe we de vector zien: als data of als actie.**
 
 ---
+disabled: true
+---
+
+## Inwendig product (oefening)
+
+Wat is het inwendig product van:
+
+$\begin{bmatrix}  0 \\  1 \end{bmatrix} $ en $ \begin{bmatrix}  1 \\  0 \end{bmatrix}$
+
+<hsp />
+
+$\begin{bmatrix}  1 \\  0 \end{bmatrix} $ en $ \begin{bmatrix}  1 \\  0 \end{bmatrix}$
+
+<hsp />
+
+$\begin{bmatrix}  5 \\  0 \end{bmatrix} $ en $ \begin{bmatrix}  5 \\  0 \end{bmatrix}$
+
+<hsp />
+
+$\begin{bmatrix}  1 \\  0 \end{bmatrix} $ en $ \begin{bmatrix}  -1 \\  0 \end{bmatrix}$
+
+<hsp />
+
+$\begin{bmatrix}  1 \\  0 \end{bmatrix} $ en $ \begin{bmatrix}  \sqrt{\frac{1}{2}} \\  \sqrt{\frac{1}{2}} \end{bmatrix}$
+
+<!--
+Oplossingen:
+* 0
+* 1
+* 25
+* -1
+* $\sqrt{\frac{1}{2}}$
+ -->
+
+
+---
 layout: image-right
 image: pythagoras.jpg
 ---
@@ -466,13 +526,17 @@ $$\lvert u \rvert = \sqrt{\langle u\mid u \rangle}$$
 
 Bijvoorbeeld:
 
-$$\ket v = \begin{bmatrix}3 \\ 4 \end{bmatrix}\qquad\qquad \begin{align*}\lvert v \rvert &= \sqrt{\langle u\mid u \rangle} \\&= \sqrt{3^2 + 4^2} \\&= \sqrt{25} \\&= 5\end{align*}$$
+$$\ket v = \begin{bmatrix}3 \\ 4 \end{bmatrix}\qquad\qquad \begin{align*}\lvert v \rvert &= \sqrt{\langle v \mid v \rangle} \\&= \sqrt{3^2 + 4^2} \\&= \sqrt{25} \\&= 5\end{align*}$$
 
 Dit is eigenlijk gewoon de formule van Pythagoras:
 
 $$a^2 + b^2 = c^2$$
 
 *De norm van een vector is altijd een normaal getal groter of gelijk aan $0$.*
+
+<!-- 
+[TJM] TODO: plaatje vervangen door een illustratie van het gegeven voorbeeld |v>
+-->
 
 
 ---
@@ -481,6 +545,32 @@ layout: chaptertitle
 
 ## Oefening
 Inwendig product en norm
+
+---
+disabled: true
+---
+
+## Inwendig product en norm (oefening)
+
+Gegeven:
+
+$$
+  \ket{u} = \begin{bmatrix}  5 \\  12 \end{bmatrix} \qquad 
+  \ket{v} = \begin{bmatrix} 15 \\   8 \end{bmatrix} 
+$$
+
+Bepaal:
+1. $\lvert u \rvert$
+1. $\lvert v \rvert$
+1. $\langle u \mid v \rangle$
+1. $\langle v \mid u \rangle$
+
+<!-- 
+Oplossing:
+* |u| = 13
+* |v| = 17
+* <u|v> = <v|u> = 15*5 + 12*8 = 171
+-->
 
 ---
 layout: image-right
@@ -513,6 +603,27 @@ layout: chaptertitle
 ## Oefening
 Cosine Similarity
 
+
+---
+disabled: true
+---
+
+## Cosine Similarity (oefening)
+
+Gegeven:
+
+$$
+  \ket{u} = \begin{bmatrix}  5 \\  12 \end{bmatrix} \qquad 
+  \ket{v} = \begin{bmatrix} 15 \\   8 \end{bmatrix} 
+$$
+
+Bepaal de _cosine similarity_ van $\ket{u}$ en $\ket{v}$. 
+
+<!-- 
+Oplossing: we weten dat |u| = 13, |v| = 17 en <v|u> = 171, dus
+cos(O) = 171 / (13 * 17) ~= 0.8 (met O dus circa 40 graden).
+-->
+
 ---
 
 # Cosine Similarity in de praktijk
@@ -529,7 +640,7 @@ We kunnen nu de cosine similarity gebruiken om met een enkele berekening vast te
 <hsp />
 
 ## Recommender System
-Als we nu ook voor een gebruiker de ratings van films kennen, kunnene we een gewogen som nemen van de beoordeelde films, waarbij we de weging van de rating af laten hangen.
+Als we nu ook voor een gebruiker de ratings van films kennen, kunnen we een gewogen som nemen van de beoordeelde films, waarbij we de weging van de rating af laten hangen.
 
 *De gebruiker heeft nu een embedding in dezelfde ruimte, die de "ideale" film benadert. Door van nog onbekende films de cosine similarity te berekenen kunnen we een gesorteerde lijst van relevante films maken.*
 
@@ -545,7 +656,7 @@ We kunnen de normale basisvectoren gebruiken om elementen uit een vector te hale
 $$\ket{e_1} = \begin{bmatrix}1 \\ 0\end{bmatrix}\qquad \ket{e_2} = \begin{bmatrix}0 \\ 1\end{bmatrix}$$
 $$\ket v = \begin{bmatrix}3 \\ 4\end{bmatrix}\qquad \langle e_1 \mid v \rangle = 3\qquad \langle e_2 \mid v \rangle = 4$$
 
-Dit is de projectie van de vector of de $x$- en $y$-as.
+Dit is de projectie van de vector op de $x$-as en $y$-as.
 
 Op dezelfde manier kunnen we op een arbitraire vector projecteren, bijvoorbeeld
 
@@ -707,6 +818,44 @@ layout: chaptertitle
 Matrix-vermenigvuldigingen
 
 ---
+disabled: true
+---
+
+## Matrix-vermenigvuldigingen (oefening)
+
+Gegeven:
+$$\ket a = \begin{bmatrix} 1 \\ 3 \end{bmatrix} \qquad
+  \ket b = \begin{bmatrix} 2 \\ 4 \end{bmatrix} \qquad
+  \mathbf{M} = \begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix} $$
+
+$$\mathbf{N} = \begin{bmatrix} 1 & 2 \\  3 & 4 \end{bmatrix} \qquad
+  \mathbf{O} = \begin{bmatrix} 7 & 3 \\ 14 & 6 \end{bmatrix} \qquad
+  \mathbf{P} = \begin{bmatrix} 1 & 0 \\  0 & 1 \\ -1 & 0 \end{bmatrix} $$
+
+Bereken:
+1. $\mathbf{M} \ket a$
+1. $\mathbf{M} \ket b$
+1. $\mathbf{M} \mathbf{N}$
+1. $\mathbf{O} \mathbf{N}$
+1. $\mathbf{P} \mathbf{N}$
+1. $\mathbf{N} \mathbf{P}$
+
+<!--
+```
+Ma:  [ 3 -1]
+Mb:  [ 4 -2]
+MN: [[ 3  4]
+     [-1 -2]]
+ON: [[16 26]
+     [32 52]]
+PN: [[ 1  2]
+     [ 3  4]
+     [-1 -2]]
+```
+NP: kan niet
+-->
+
+---
 
 # Matrices als getallen
 
@@ -734,7 +883,7 @@ Net als bij vectoren kun je van een matrix de norm berekenen. Er zijn diverse no
 
 - De Frobenius norm is de wortel van het Frobenius (inner) product van de matrix met zichzelf. Hier worden alle elementen paarsgewijs met elkaar vermenigvuldigd, en worden de getallen bij elkaar opgeteld.
 
-$$\lVert \mathbf M \rVert_F = \sqrt{\sum_i^m \sum_j^n\;\lvert M_i^j \rvert^2}$$
+$$\lVert \mathbf M \rVert_F = \sqrt{\sum_i^m \sum_j^n\;\lvert \mathbf{M}_i^j \rvert^2}$$
 
   - Dit komt overeen met de vector norm die we gezien hebben, als we alle getallen in de matrix als &eacute;&eacute;n vector beschouwen.
 
@@ -742,6 +891,22 @@ $$\lVert \mathbf M \rVert_F = \sqrt{\sum_i^m \sum_j^n\;\lvert M_i^j \rvert^2}$$
 <hsp />
 
 *De tussenstap, waarin we ieder item paarsgewijs vermenigvuldigen wordt het Hadamard-product genoemd: $\mathbf M \odot \mathbf N$. Voor de norm nemen we het Hadamard-product van $\mathbf M$ met zichzelf. Hoewel we dit product niet vaak tegenkomen, is het belangrijk om te kennen: dit is het product dat Numpy gebruikt als je `m * m` doet.*
+
+---
+
+# Norm van een matrix (voorbeeld)
+
+$$\lVert \mathbf M \rVert_F = \sqrt{\sum_i^m \sum_j^n\;\lvert \mathbf{M}_i^j \rvert^2}$$
+
+Gegeven $\mathbf{N} = \begin{bmatrix} 1 & 2 \\  3 & 4 \end{bmatrix}$, dan
+
+$$\begin{align*}
+\lVert \mathbf{N} \rVert_F 
+    &= \lVert \begin{bmatrix} 1 & 2 \\  3 & 4 \end{bmatrix} \rVert \\
+    &= \sqrt{1^2 + 2^2 + 3^2 + 4^2} \\
+    &= \sqrt{30}
+\end{align*}$$
+
 
 ---
 layout: chaptertitle
@@ -847,6 +1012,49 @@ layout: chaptertitle
 Gauss-Jordan
 
 ---
+disabled: true
+---
+
+## Gauss-Jordan Eliminatie (oefening)
+
+Gegeven:
+* 🍏+🍏+🍏 = €30
+* 🍏+🍌+🍌 = €16
+* 🍌-🍒 = €2
+
+Vraag: wat is de prijs van 🍏+🍌+🍒?
+
+Geschreven als drie vergelijkingen:
+
+$$
+3a + 0b + 0c = 30 \\
+1a + 2b + 0c = 16 \\
+0a + 1b - 1c = 2
+$$
+
+of als matrix:
+
+$$\begin{bmatrix}
+    3 & 0 & 0 &\bigm| & 30 \\
+    1 & 2 & 0 &\bigm| & 16 \\
+    0 & 1 & -1 &\bigm| & 2 \\ 
+\end{bmatrix}
+$$
+
+<!--
+Oplossing:
+* Rij 1 delen door 3: $R_3 /= -13$
+* Rij 2 min rij 1: $R_2 -= R_1$
+* Rij 2 delen door 2: $R_3 /= 2$
+* Rij 3 min rij 2: $R_3 -= R_2$
+* Rij 3 delen door -1: $R_3 /= -1$
+
+Dan krijgen we vector $\begin{bmatrix}10 \\ 3 \\ 1 \end{bmatrix}$
+
+en totale prijs: $\begin{bmatrix}1 & 1 & 1 \end{bmatrix} \begin{bmatrix}10 \\ 3 \\ 1 \end{bmatrix} = 14$
+-->
+
+---
 
 # Over- en ondergedetermineerde systemen
 
@@ -865,6 +1073,7 @@ heeft er oneindig (ondergedetermineerd).
 ---
 
 # Determinant
+
 Om te bepalen hoeveel oplossingen er zijn kunnen we de determinant van de matrix nemen:
 
 - Een matrix met unieke oplossing heeft een determinant die niet $0$ is. 
@@ -892,6 +1101,45 @@ layout: chaptertitle
 ## Oefening
 
 Determinanten
+
+
+---
+disabled: true
+---
+
+## Determinant (oefening)
+
+Gegeven:
+
+$$\mathbf{M} = \begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix} \qquad
+  \mathbf{N} = \begin{bmatrix} 1 & 2 \\  3 & 4 \end{bmatrix} \qquad
+  \mathbf{O} = \begin{bmatrix} 7 & 3 \\ 14 & 6 \end{bmatrix} \qquad
+  \mathbf{P} = \begin{bmatrix} 1 & 0 \\  0 & 1 \\ -1 & 0 \end{bmatrix} $$
+
+Bepaal de determinanten van:
+1. $\mathbf{M}$
+1. $\mathbf{N}$
+1. $\mathbf{O}$
+1. $\mathbf{M} \mathbf{N}$
+1. $\mathbf{O} \mathbf{N}$
+1. $\mathbf{P} \mathbf{N}$
+1. $\mathbf{N} \mathbf{P}$
+
+<!--
+```
+MN: [[ 3  4]
+     [-1 -2]]
+
+ON: [[16 26]
+     [32 52]]
+
+ M: 0  *  0 -  1 * -1 =  1 (draaiing, geen vergroting)
+ N:  1 *  4 -  2 *  3 = -2 (spiegelen, 2x zo groot)
+ O:  6 *  7 -  3 * 14 =  0 (plat slaan, we verliezen een dimensie)
+MN:  3 * -2 -  4 * -1 = -2 (dus draaien + spiegelen & x2 -> spiegelen & x2)
+ON: 16 * 52 - 26 * 32 =  0 (plat slaan is plat slaan)
+```
+-->
 
 ---
 
@@ -1304,7 +1552,7 @@ disabled: true
 - Soms willen we een hogere-orde tensor maken op basis van vectoren.
   - Dit kan met het Kronecker product, $\otimes$.
 
-$$\begin{bmatrix}v^1 \\ v^2\end{bmatrix} \otimes \begin{bmatrix}\alpha_1 & \alpha_2\end{bmatrix} = \begin{bmatrix} \begin{bmatrix}v^1\alpha_1 \\ v^1\alpha_2\end{bmatrix} & \begin{bmatrix}v^2\alpha_1 \\ v^2\alpha_2\end{bmatrix} \end{bmatrix}$$
+$$\begin{bmatrix}v^1 \\ v^2\end{bmatrix} \otimes \begin{bmatrix}\alpha_1 & \alpha_2\end{bmatrix} = \begin{bmatrix} \begin{bmatrix}v^1\alpha_1 \\ v^2\alpha_1\end{bmatrix} & \begin{bmatrix}v^1\alpha_2 \\ v^2\alpha_2\end{bmatrix} \end{bmatrix}$$
 
 Hier maken we een matrix met behulp van een vector en een covector.
 
