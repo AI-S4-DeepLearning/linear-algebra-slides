@@ -1626,7 +1626,7 @@ image: pca-tsne.png
 
 # Nadelen PCA
 
-- PCA is a Lineaire Techniek:
+- PCA is een lineaire techniek:
   - PCA vindt lineaire verbanden tussen variabelen, maar vaak zijn er ook relevante niet-lineaire verbanden.
 
 - PCA kijkt naar globale variantie, maar is zich niet bewust van small-scale structuren, zoals clusters of vormen.
@@ -1772,65 +1772,3 @@ layout: chaptertitle
 <hsp />
 
 *Met deze informatie kunnen we aan de slag met het tweede deel van het portfolio-item.*
-
----
-layout: chaptertitle
----
-
-# [LA-7] Calculus met Vectoren en Matrices
-
----
-
-# Terugblik S3
-
-https://github.com/AI-S3-2025/S3_AI_lesmateriaal/blob/main/WiskundigeTechnieken/wiskunde_les3.ipynb
-https://github.com/AI-S3-2025/S3_AI_lesmateriaal/blob/main/WiskundigeTechnieken/wiskunde_les4.ipynb
-
----
-
-# Afgeleide van een getal-wise functie -> sigmoid?
-
-tbv NN
-
----
-
-# Afgeleide van een functie met 2 args
-
-- Partieel
-- Gradient
-
----
-
-# Afgeleides van matrix-producten / tensoren etc
-
----
-
-# Gradient Descent
-
-- Simpele 2D functie (2D Gauss?) maar in termen van matrix/vector
-
----
-
-# Matrices en grafen?
-
----
-layout: chaptertitle
----
-
-# Werkcollege
-
----
-layout: image-right
-image: reps.jpg
----
-
-# Aan de slag!
-
-<br>
-
-### Reader
-- Opgave 1.1
-- Opgave 1.2
-- Opgave 1.3
-- Opgave 1.4
-- Opgave 1.5
