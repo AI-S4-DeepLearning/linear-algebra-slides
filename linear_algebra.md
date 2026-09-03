@@ -628,6 +628,12 @@ $$\mathbf{M} = \begin{bmatrix}1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9\end{bmatrix} \
   - Voldoen aan alle eisen van vectoren (optellen, schalen)
 
 ---
+layout: chaptertitle
+---
+
+# [LA-3] Matrices en Tensoren
+
+---
 
 # Matrix-vector Multiplicatie
 
@@ -742,13 +748,6 @@ $$\lVert \mathbf M \rVert_F = \sqrt{\sum_i^m \sum_j^n\;\lvert M_i^j \rvert^2}$$
 <hsp />
 
 *De tussenstap, waarin we ieder item paarsgewijs vermenigvuldigen wordt het Hadamard-product genoemd: $\mathbf M \odot \mathbf N$. Voor de norm nemen we het Hadamard-product van $\mathbf M$ met zichzelf. Hoewel we dit product niet vaak tegenkomen, is het belangrijk om te kennen: dit is het product dat Numpy gebruikt als je `m * m` doet.*
-
----
-layout: chaptertitle
----
-
-# [LA-3] Matrices en Tensoren
-
 
 ---
 
@@ -938,6 +937,59 @@ layout: chaptertitle
 ## Oefening
 
 Transposities
+
+---
+layout: chaptertitle
+---
+
+# Portfolio-item
+## [LA-I] Vectorbewerkingen
+
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+<hsp />
+
+*Met deze informatie kunnen we aan de slag met het tweede deel van het portfolio-item.*
+
+---
+layout: chaptertitle
+---
+
+# [LA-4] Lineaire Algebra voor (deep) learning
+
+---
+layout: image-left
+image: neurons.jpg
+---
+
+# Neurale Netwerken
+
+- In een neuraal netwerk wordt de waarde van een neuron (voordat een eventuele activatie-functie wordt toegepast) bepaald door een gewogen som van de output waardes van de neuronen in de laag ervoor.
+  - Dit lijkt behoorlijk op het inwendig product van twee vectoren: een vector met data, en een covector met de gewichten.
+- Dit inwendig product bepalen we voor alle neuronen in een laag. Als we de laag als een vector beschouwen, is ieder neuron een inwendig product, waarbij de vector steeds hetzelfde is (de input-laag in vector vorm) en de covector steeds anders is.
+  - Dit lijkt behoorlijk op een matrix-vector product: alle gewichten tussen de twee lagen vormen samen een matrix.
+
+---
+layout: image-right
+image: nn.jpeg
+---
+
+# Waarom vectoren?
+
+De voordelen van deze representatie zitten met name in de weergave en het uitvoeren van de berekening:
+
+- Het is wat compacter opgeschreven.
+  - Dit vergt even wennen aan de notatie, er gebeurt meer in een korte formule, maar daarna scheidt het effectief de ruis (exacte sommen) van de conceptuele berekening.
+- Het worden niet meer of minder sommen als je het met de hand zou moeten doen.
+- **Maar:** de computer kan deze berekeningen parallel uitvoeren.
+  - Elke berekening is onafhankelijk van elkaar: de berekening van een element hangt niet af van die van een ander element.
 
 ---
 layout: image-right
@@ -1330,59 +1382,6 @@ De meeste producten die we deze les gezien hebben, zitten in Numpy als `dot()` o
   - Vectoren (mits opgeslagen als $n$-D arrays en niet $n\times 1$ of $1 \times n$) worden vanzelf in de juiste vorm gezet voor een geldig product*.
 
 **Volgende les gaan we toewerken naar toepassing in neurale netwerken, en gebruik van Numpy in deze context.**
-
----
-layout: chaptertitle
----
-
-# Portfolio-item
-## [LA-I] Vectorbewerkingen
-
-<hsp />
-<hsp />
-<hsp />
-<hsp />
-<hsp />
-<hsp />
-<hsp />
-<hsp />
-<hsp />
-<hsp />
-
-*Met deze informatie kunnen we aan de slag met het tweede deel van het portfolio-item.*
-
----
-layout: chaptertitle
----
-
-# [LA-4] Lineaire Algebra voor (deep) learning
-
----
-layout: image-left
-image: neurons.jpg
----
-
-# Neurale Netwerken
-
-- In een neuraal netwerk wordt de waarde van een neuron (voordat een eventuele activatie-functie wordt toegepast) bepaald door een gewogen som van de output waardes van de neuronen in de laag ervoor.
-  - Dit lijkt behoorlijk op het inwendig product van twee vectoren: een vector met data, en een covector met de gewichten.
-- Dit inwendig product bepalen we voor alle neuronen in een laag. Als we de laag als een vector beschouwen, is ieder neuron een inwendig product, waarbij de vector steeds hetzelfde is (de input-laag in vector vorm) en de covector steeds anders is.
-  - Dit lijkt behoorlijk op een matrix-vector product: alle gewichten tussen de twee lagen vormen samen een matrix.
-
----
-layout: image-right
-image: nn.jpeg
----
-
-# Waarom vectoren?
-
-De voordelen van deze representatie zitten met name in de weergave en het uitvoeren van de berekening:
-
-- Het is wat compacter opgeschreven.
-  - Dit vergt even wennen aan de notatie, er gebeurt meer in een korte formule, maar daarna scheidt het effectief de ruis (exacte sommen) van de conceptuele berekening.
-- Het worden niet meer of minder sommen als je het met de hand zou moeten doen.
-- **Maar:** de computer kan deze berekeningen parallel uitvoeren.
-  - Elke berekening is onafhankelijk van elkaar: de berekening van een element hangt niet af van die van een ander element.
 
 ---
 layout: image
