@@ -992,6 +992,12 @@ De voordelen van deze representatie zitten met name in de weergave en het uitvoe
   - Elke berekening is onafhankelijk van elkaar: de berekening van een element hangt niet af van die van een ander element.
 
 ---
+layout: chaptertitle
+---
+
+## Tensoren
+
+---
 layout: image-right
 image: tensor.svg
 ---
@@ -1382,6 +1388,12 @@ De meeste producten die we deze les gezien hebben, zitten in Numpy als `dot()` o
   - Vectoren (mits opgeslagen als $n$-D arrays en niet $n\times 1$ of $1 \times n$) worden vanzelf in de juiste vorm gezet voor een geldig product*.
 
 **Volgende les gaan we toewerken naar toepassing in neurale netwerken, en gebruik van Numpy in deze context.**
+
+---
+layout: chaptertitle
+---
+
+## Neurale Netwerken
 
 ---
 layout: image
