@@ -1463,6 +1463,37 @@ layout: chaptertitle
 # [LA-5] Dimensionaliteits-reductie met PCA
 
 ---
+layout: image-left
+image: marimo.jpg
+---
+
+# Huishoudelijk
+
+- We gaan als pilot voor de komende opdracht(en) werken met een alternatief notebook systeem.
+- Dit is helaas net niet chronologisch gegaan met het maken van de mono-repo door David.
+    - Vraag aan jullie: `git push` je huidige staat.
+    - Ik voeg vervolgens de nieuwe file toe aan GitHub.
+    - Installeer ondertussen `marimo` (zou moeten kunnen met `pip install` binnen je Conda omgeving).
+    - Hierna `git pull` en verder.
+    - `jupyter lab` wordt `marimo edit`.
+
+---
+layout: image-left
+image: marimo.jpg
+---
+
+#  Wat gaat er anders?
+
+- Je notebook is een Python file met een decorated functie per cell. Output wordt niet opgeslagen.
+    - Dit moet schelen in het Git gebruik.
+- Cellen zijn "reactief", het is niet mogelijk om nog "oude state" in je geheugen te hebben die niet in de Git komt.
+    - Met andere woorden: als het bij jou werkt, moet het ook bij ons werken.
+- Omdat alle cellen "tegelijk" draaien, maakt volgorde minder uit.
+    - Hierdoor zijn dubbele namen niet handig (denk aan `fig, ax`).
+    - Je kan hieromheen door door namen van een underscore te voorzien (`_fig, _ax`).
+    - Deze namen zijn alleen binnen dezelfde cell geldig.
+
+---
 layout: image-right
 image: colours2.svg
 ---
